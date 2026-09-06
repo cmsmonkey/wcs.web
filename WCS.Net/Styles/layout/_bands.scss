@@ -1,0 +1,17 @@
+// Full-bleed dark sections used to break up the page rhythm.
+.band {
+  background: var(--band-bg);
+  color: var(--band-ink);
+
+  .muted {
+    color: var(--band-muted);
+  }
+
+  .kicker {
+    color: var(--band-cyan);
+  }
+}
+
+.band-alt {
+  background: var(--band-bg-2);
+}

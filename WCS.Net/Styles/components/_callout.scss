@@ -1,0 +1,25 @@
+.lpg-callout {
+  margin-top: 44px;
+  padding: 28px 30px;
+  background: var(--surface-alt);
+  position: relative;
+
+  .kicker {
+    color: var(--brass);
+  }
+
+  h3 {
+    font-size: 20px;
+    margin: 10px 0 8px;
+    text-transform: none;
+    font-family: "IBM Plex Sans";
+    font-weight: 700;
+  }
+
+  p {
+    margin: 0;
+    color: var(--muted);
+    font-size: 14.5px;
+    max-width: 70ch;
+  }
+}

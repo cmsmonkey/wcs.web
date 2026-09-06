@@ -1,0 +1,48 @@
+// Corner-bracket frame motif — a decorative border used on photos and callouts.
+.bracket {
+  position: relative;
+
+  &::before, &::after,
+  > .bl, > .br {
+    content: "";
+    position: absolute;
+    width: 22px;
+    height: 22px;
+    z-index: 2;
+    border-color: var(--cyan);
+  }
+
+  &::before {
+    top: -1px;
+    left: -1px;
+    border-top: 3px solid var(--cyan);
+    border-left: 3px solid var(--cyan);
+  }
+
+  &::after {
+    top: -1px;
+    right: -1px;
+    border-top: 3px solid var(--cyan);
+    border-right: 3px solid var(--cyan);
+  }
+
+  .bl {
+    bottom: -1px;
+    left: -1px;
+    border-bottom: 3px solid var(--cyan);
+    border-left: 3px solid var(--cyan);
+  }
+
+  .br {
+    bottom: -1px;
+    right: -1px;
+    border-bottom: 3px solid var(--cyan);
+    border-right: 3px solid var(--cyan);
+  }
+}
+
+.band .bracket {
+  &::before, &::after, .bl, .br {
+    border-color: var(--band-cyan);
+  }
+}

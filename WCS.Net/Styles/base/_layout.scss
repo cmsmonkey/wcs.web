@@ -1,0 +1,19 @@
+.wrap {
+  max-width: 1180px;
+  margin: 0 auto;
+  padding: 0 32px;
+}
+
+section {
+  padding: 96px 0;
+}
+
+@media (max-width: 760px) {
+  section {
+    padding: 64px 0;
+  }
+
+  .wrap {
+    padding: 0 20px;
+  }
+}

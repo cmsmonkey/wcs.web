@@ -1,0 +1,153 @@
+// Reusable card grids — feature cards, value cards, team cards.
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2px;
+  background: var(--line);
+
+  @media (max-width: 900px) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  @media (max-width: 600px) {
+    grid-template-columns: 1fr;
+  }
+}
+
+.card {
+  background: var(--surface);
+  padding: 32px 28px;
+
+  .tag {
+    font-family: "IBM Plex Mono";
+    font-size: 11px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--brass);
+    margin-bottom: 14px;
+    display: block;
+  }
+
+  h3 {
+    font-family: "IBM Plex Sans";
+    text-transform: none;
+    font-weight: 700;
+    font-size: 18px;
+    letter-spacing: 0;
+    margin-bottom: 10px;
+  }
+
+  p {
+    color: var(--muted);
+    font-size: 14.5px;
+    margin: 0;
+  }
+
+  .stat {
+    font-family: "Big Shoulders Display";
+    font-weight: 800;
+    font-size: 40px;
+    color: var(--ink);
+    line-height: 1;
+    margin-bottom: 8px;
+  }
+}
+
+.valuesgrid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 1px;
+  background: var(--line);
+  margin-top: 12px;
+
+  @media (max-width: 960px) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  @media (max-width: 520px) {
+    grid-template-columns: 1fr;
+  }
+}
+
+.valuecard {
+  background: var(--surface);
+  padding: 26px 22px;
+
+  svg {
+    width: 26px;
+    height: 26px;
+    color: var(--brass);
+    margin-bottom: 14px;
+  }
+
+  h3 {
+    font-family: "IBM Plex Sans";
+    text-transform: none;
+    font-weight: 700;
+    font-size: 15px;
+    letter-spacing: 0;
+    margin-bottom: 8px;
+  }
+
+  p {
+    margin: 0;
+    font-size: 13.5px;
+    color: var(--muted);
+  }
+}
+
+.teamgrid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 28px;
+  margin-top: 12px;
+
+  @media (max-width: 860px) {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  @media (max-width: 520px) {
+    grid-template-columns: 1fr;
+  }
+}
+
+.teamcard {
+  img {
+    width: 100%;
+    aspect-ratio: 4/5;
+    object-fit: cover;
+    margin-bottom: 14px;
+  }
+
+  h3 {
+    font-family: "IBM Plex Sans";
+    text-transform: none;
+    font-weight: 700;
+    font-size: 16.5px;
+    letter-spacing: 0;
+    margin-bottom: 2px;
+  }
+
+  .role {
+    font-family: "IBM Plex Mono";
+    font-size: 11px;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: var(--cyan);
+    margin-bottom: 8px;
+    display: block;
+  }
+
+  p {
+    margin: 0;
+    font-size: 13.5px;
+    color: var(--muted);
+  }
+}
+
+.team-intro {
+  max-width: 74ch;
+  color: var(--muted);
+  font-size: 16px;
+  margin: 14px 0 0;
+}

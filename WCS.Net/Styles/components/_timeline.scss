@@ -1,0 +1,45 @@
+.timeline {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  border-left: 2px solid var(--band-line);
+
+  li {
+    position: relative;
+    padding: 0 0 34px 28px;
+
+    &:last-child {
+      padding-bottom: 0;
+    }
+
+    &::before {
+      content: "";
+      position: absolute;
+      left: -7px;
+      top: 2px;
+      width: 12px;
+      height: 12px;
+      background: var(--band-bg);
+      border: 2px solid var(--band-cyan);
+      border-radius: 50%;
+    }
+  }
+
+  .tlabel {
+    font-family: "IBM Plex Mono";
+    font-size: 11px;
+    letter-spacing: 0.09em;
+    text-transform: uppercase;
+    color: var(--band-cyan);
+    margin-bottom: 5px;
+  }
+
+  .tbody {
+    font-size: 15px;
+    color: var(--band-ink);
+
+    b {
+      color: var(--band-brass);
+    }
+  }
+}

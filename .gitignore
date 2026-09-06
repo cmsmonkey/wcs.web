@@ -1,0 +1,12 @@
+## .NET
+bin/
+obj/
+
+## Generated CSS (compiled from Styles/*.scss by AspNetCore.SassCompiler on build/publish)
+WCS.Net/wwwroot/css/site.css
+WCS.Net/wwwroot/css/site.css.map
+
+## OS / editor
+.DS_Store
+.vs/
+.vscode/

@@ -1,0 +1,34 @@
+.statrow {
+  display: flex;
+  gap: 0;
+  flex-wrap: wrap;
+  border-top: 1px solid var(--line);
+}
+
+.statitem {
+  flex: 1 1 140px;
+  padding: 18px 18px 0 0;
+  border-right: 1px solid var(--line);
+  margin-right: 18px;
+
+  &:last-child {
+    border-right: none;
+  }
+
+  .num {
+    font-family: "Big Shoulders Display";
+    font-weight: 800;
+    font-size: 32px;
+    color: var(--cyan);
+    line-height: 1;
+  }
+
+  .lbl {
+    font-family: "IBM Plex Mono";
+    font-size: 10.5px;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--muted);
+    margin-top: 6px;
+  }
+}
