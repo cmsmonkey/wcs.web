@@ -11,15 +11,7 @@
     <div class="valve-cards">
       @foreach (var valve in Model)
       {
-          <a class="valve-card" asp-controller="Valves" asp-action="Show" asp-route-slug="@valve.Slug">
-              <img src="@valve.ThumbnailSrc" alt="@valve.ThumbnailAlt">
-              <div class="valve-card-body">
-                  <span class="kicker">@valve.Kicker</span>
-                  <h3>@valve.Name</h3>
-                  <p>@valve.Teaser</p>
-                  <span class="valve-card-link">View details &rarr;</span>
-              </div>
-          </a>
+          <partial name="_ValveCard" model="valve" />
       }
     </div>
   </div>

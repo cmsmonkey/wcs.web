@@ -1,0 +1,11 @@
+@model ValveViewModel
+
+<a class="valve-card" asp-controller="Valves" asp-action="Show" asp-route-slug="@Model.Slug">
+    <img src="@Model.ThumbnailSrc" alt="@Model.ThumbnailAlt">
+    <div class="valve-card-body">
+        <span class="kicker">@Model.Kicker</span>
+        <h3>@Model.Name</h3>
+        <p>@Model.Teaser</p>
+        <span class="valve-card-link">View details &rarr;</span>
+    </div>
+</a>

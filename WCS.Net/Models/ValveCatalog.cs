@@ -117,4 +117,8 @@ public static class ValveCatalog
 
     public static ValveViewModel? FindBySlug(string slug) =>
         All.FirstOrDefault(v => string.Equals(v.Slug, slug, StringComparison.OrdinalIgnoreCase));
+
+    /// <summary>All valve types other than the given slug — used for "other valve types" cards.</summary>
+    public static IEnumerable<ValveViewModel> AllExcept(string slug) =>
+        All.Where(v => !string.Equals(v.Slug, slug, StringComparison.OrdinalIgnoreCase));
 }
