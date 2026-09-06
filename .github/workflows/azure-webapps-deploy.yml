@@ -7,7 +7,7 @@ on:
   workflow_dispatch:
 
 env:
-  AZURE_WEBAPP_NAME: wcs-afgbghd0a4cde0hn
+  AZURE_WEBAPP_NAME: wcs
   AZURE_WEBAPP_PACKAGE_PATH: publish
   PROJECT_PATH: WCS.Net/WCS.Net.csproj
   DOTNET_VERSION: '10.0.x'
