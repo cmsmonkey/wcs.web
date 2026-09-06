@@ -1,0 +1,73 @@
+// Compact "browse by type" cards linking out to a detail page — used on the
+// Home page's Parts section to link to each Valve X page. Reusable for any
+// future "browse the catalog" hub section.
+.valve-cards {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 24px;
+  margin-top: 44px;
+
+  @media (max-width: 900px) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  @media (max-width: 520px) {
+    grid-template-columns: 1fr;
+  }
+}
+
+.valve-card {
+  display: flex;
+  flex-direction: column;
+  background: var(--surface);
+  border: 1px solid var(--line);
+  text-decoration: none;
+  color: inherit;
+  transition: border-color .2s ease;
+
+  &:hover {
+    border-color: var(--cyan);
+
+    .valve-card-link {
+      color: var(--cyan);
+    }
+  }
+
+  img {
+    width: 100%;
+    aspect-ratio: 5/4;
+    object-fit: cover;
+  }
+}
+
+.valve-card-body {
+  padding: 20px 22px 22px;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+
+  h3 {
+    font-family: "IBM Plex Sans";
+    text-transform: none;
+    font-weight: 700;
+    font-size: 17px;
+    letter-spacing: 0;
+    margin: 10px 0 8px;
+  }
+
+  p {
+    margin: 0 0 14px;
+    color: var(--muted);
+    font-size: 14px;
+    flex: 1;
+  }
+}
+
+.valve-card-link {
+  font-family: "IBM Plex Mono";
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--ink);
+}

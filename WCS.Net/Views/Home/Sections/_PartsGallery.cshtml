@@ -1,3 +1,5 @@
+@model IReadOnlyList<ValveViewModel>
+
 <section id="parts">
   <div class="wrap">
     <div class="section-head">
@@ -6,57 +8,19 @@
       <p style="color:var(--muted); font-size:16px; margin-top:14px;">Like our competitors, WCS outsources soft-seal production to an established plastics specialist. Unlike them, we manufacture our own metal seals in-house in Norway — and remain the only supplier for some discontinued valve types.</p>
     </div>
 
-    <div class="pairs-wrap">
-      <div class="pairs-row">
-        <figure class="pair-figure" style="margin:0;">
-          <div style="position:relative;">
-            <img style="width:100%; aspect-ratio:4/5; object-fit:cover; filter:saturate(0.85);" src="~/images/parts/hq-limitswitch-before.jpg" alt="A worn HQ limitswitch box after years of service">
-            <figcaption style="position:absolute; left:0; right:0; bottom:0; padding:10px 14px; font-family:'IBM Plex Mono'; font-size:11px; color:#fff; background:linear-gradient(0deg, rgba(6,10,14,0.82), rgba(6,10,14,0));">HQ LIMITSWITCH BOX — AS RECEIVED</figcaption>
-          </div>
-        </figure>
-        <figure class="pair-figure" style="margin:0;">
-          <div style="position:relative;">
-            <img style="width:100%; aspect-ratio:4/5; object-fit:cover;" src="~/images/parts/hq-limitswitch-after.jpg" alt="A 316L stainless steel limitswitch box manufactured by WCS">
-            <figcaption style="position:absolute; left:0; right:0; bottom:0; padding:10px 14px; font-family:'IBM Plex Mono'; font-size:11px; color:#fff; background:linear-gradient(0deg, rgba(6,10,14,0.82), rgba(6,10,14,0));">316L STAINLESS STEEL LIMITSWITCH BOX — WCS</figcaption>
-          </div>
-        </figure>
-      </div>
-      <div class="pairs-row">
-        <figure class="pair-figure" style="margin:0;">
-          <div style="position:relative;">
-            <img style="width:100%; aspect-ratio:4/5; object-fit:cover; filter:saturate(0.85);" src="~/images/parts/acto-distribution-bar-before.jpg" alt="A worn Acto distribution bar, corroded">
-            <figcaption style="position:absolute; left:0; right:0; bottom:0; padding:10px 14px; font-family:'IBM Plex Mono'; font-size:11px; color:#fff; background:linear-gradient(0deg, rgba(6,10,14,0.82), rgba(6,10,14,0));">ACTO DISTRIBUTION BAR — AS RECEIVED</figcaption>
-          </div>
-        </figure>
-        <figure class="pair-figure" style="margin:0;">
-          <div style="position:relative;">
-            <img style="width:100%; aspect-ratio:4/5; object-fit:cover;" src="~/images/parts/acto-distribution-bar-after.jpg" alt="A newly machined Acto distribution bar manufactured by WCS">
-            <figcaption style="position:absolute; left:0; right:0; bottom:0; padding:10px 14px; font-family:'IBM Plex Mono'; font-size:11px; color:#fff; background:linear-gradient(0deg, rgba(6,10,14,0.82), rgba(6,10,14,0));">ACTO DISTRIBUTION BAR — WCS</figcaption>
-          </div>
-        </figure>
-      </div>
-    </div>
-
-    <div class="partsgrid">
-      <figure>
-        <img src="~/images/parts/seal-kit-1.jpg" alt="HQ and Acto cylinder seal kit, assembled">
-        <figcaption>HQ &amp; ACTO CYLINDER SEAL KITS</figcaption>
-      </figure>
-      <figure>
-        <img src="~/images/parts/seal-kit-2.jpg" alt="HQ and Acto cylinder seal kit, alternate">
-        <figcaption>HQ 400 CYLINDERS — MORE SIZES IN PROGRESS</figcaption>
-      </figure>
-      <figure>
-        <img src="~/images/parts/hydraulic-block-blind-plug.jpg" alt="HQ hydraulic block blind plug">
-        <figcaption>HQ HYDRAULIC BLOCK BLIND PLUG</figcaption>
-      </figure>
-    </div>
-
-    <div class="lpg-callout bracket">
-      <span class="bl"></span><span class="br"></span>
-      <span class="kicker">New</span>
-      <h3>LPG seals, now available from WCS</h3>
-      <p>Following repeated requests from customers, WCS now supplies LPG seals for Klinger Westad valves — designed as a direct, fully compatible OEM replacement. We're building stock of the most common sizes for shorter lead times and fast worldwide delivery. The 25% Price Guarantee applies here too.</p>
+    <div class="valve-cards">
+      @foreach (var valve in Model)
+      {
+          <a class="valve-card" asp-controller="Valves" asp-action="Show" asp-route-slug="@valve.Slug">
+              <img src="@valve.ThumbnailSrc" alt="@valve.ThumbnailAlt">
+              <div class="valve-card-body">
+                  <span class="kicker">@valve.Kicker</span>
+                  <h3>@valve.Name</h3>
+                  <p>@valve.Teaser</p>
+                  <span class="valve-card-link">View details &rarr;</span>
+              </div>
+          </a>
+      }
     </div>
   </div>
 </section>

@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 320">
+  <rect width="400" height="320" fill="#E6ECEF"/>
+  <rect x="6" y="6" width="388" height="308" fill="none" stroke="#0E8FA6" stroke-width="3" stroke-dasharray="10 8"/>
+  <g fill="none" stroke="#4E5C66" stroke-width="6" stroke-linecap="round" stroke-linejoin="round">
+    <rect x="140" y="125" width="120" height="90" rx="8"/>
+    <circle cx="200" cy="170" r="26"/>
+    <path d="M170 125 l10 -20 h40 l10 20"/>
+  </g>
+  <text x="200" y="255" font-family="IBM Plex Mono, monospace" font-size="14" letter-spacing="1"
+        fill="#0E8FA6" text-anchor="middle">Valve B — Card Thumbnail</text>
+</svg>

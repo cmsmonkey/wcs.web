@@ -22,9 +22,26 @@
             {
                 <figure>
                     <img src="@photo.Src" alt="@photo.Alt">
+                    @if (!string.IsNullOrEmpty(photo.Caption))
+                    {
+                        <figcaption>@photo.Caption</figcaption>
+                    }
                 </figure>
             }
         </div>
+
+        @if (Model.Callout is not null)
+        {
+            <div class="lpg-callout bracket">
+                <span class="bl"></span><span class="br"></span>
+                @if (!string.IsNullOrEmpty(Model.Callout.Kicker))
+                {
+                    <span class="kicker">@Model.Callout.Kicker</span>
+                }
+                <h3>@Model.Callout.Title</h3>
+                <p>@Model.Callout.Body</p>
+            </div>
+        }
     </div>
 </section>
 

@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 500">
+  <rect width="400" height="500" fill="#E6ECEF"/>
+  <rect x="6" y="6" width="388" height="488" fill="none" stroke="#0E8FA6" stroke-width="3" stroke-dasharray="10 8"/>
+  <g fill="none" stroke="#4E5C66" stroke-width="6" stroke-linecap="round" stroke-linejoin="round">
+    <rect x="140" y="205" width="120" height="90" rx="8"/>
+    <circle cx="200" cy="250" r="26"/>
+    <path d="M170 205 l10 -20 h40 l10 20"/>
+  </g>
+  <text x="200" y="345" font-family="IBM Plex Mono, monospace" font-size="16" letter-spacing="1"
+        fill="#4E5C66" text-anchor="middle" text-transform="uppercase">PLACEHOLDER PHOTO</text>
+  <text x="200" y="370" font-family="IBM Plex Mono, monospace" font-size="14"
+        fill="#0E8FA6" text-anchor="middle">Valve C — Photo 1</text>
+</svg>
