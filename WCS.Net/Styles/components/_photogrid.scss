@@ -1,0 +1,28 @@
+// Generic N-photo grid — 4 columns down to 1 on mobile.
+// Used by the valve pages; reusable by any future page needing a photo set.
+.photogrid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2px;
+  background: var(--line);
+  margin-top: 12px;
+
+  @media (max-width: 860px) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  @media (max-width: 480px) {
+    grid-template-columns: 1fr;
+  }
+
+  figure {
+    margin: 0;
+    background: var(--surface);
+  }
+
+  img {
+    width: 100%;
+    aspect-ratio: 4/5;
+    object-fit: cover;
+  }
+}

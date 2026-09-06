@@ -1,0 +1,31 @@
+@model ValveViewModel
+
+<section class="page-header">
+    <div class="wrap">
+        <span class="kicker">@Model.Kicker</span>
+        <h1>@Model.Name</h1>
+        @foreach (var paragraph in Model.IntroParagraphs)
+        {
+            <p class="lede">@paragraph</p>
+        }
+    </div>
+</section>
+
+<section>
+    <div class="wrap">
+        <div class="section-head">
+            <span class="kicker">Photos</span>
+            <h2>@Model.Name in the field and in the workshop</h2>
+        </div>
+        <div class="photogrid">
+            @foreach (var photo in Model.Photos)
+            {
+                <figure>
+                    <img src="@photo.Src" alt="@photo.Alt">
+                </figure>
+            }
+        </div>
+    </div>
+</section>
+
+<partial name="_QuoteCta" />

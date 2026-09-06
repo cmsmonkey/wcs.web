@@ -1,0 +1,21 @@
+// Generic sub-page header: kicker + H1 + intro paragraph(s).
+// Reusable by any future sub-page, not just the valve pages.
+.page-header {
+  padding-top: 76px;
+
+  h1 {
+    font-size: clamp(36px, 5vw, 56px);
+    margin: 16px 0 22px;
+  }
+
+  .lede {
+    font-size: 18px;
+    color: var(--muted);
+    max-width: 60ch;
+    margin: 0 0 16px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+}
