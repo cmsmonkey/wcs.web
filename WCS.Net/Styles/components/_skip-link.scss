@@ -1,0 +1,25 @@
+// Skip-to-content link for keyboard/screen-reader users — hidden until focused,
+// then appears above everything else, including the sticky header.
+// transform (not `top`) hides it, since transform percentages resolve against
+// the element's own size regardless of content/padding changes.
+.skip-link {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  padding: 14px 22px;
+  background: var(--cyan);
+  color: #031218;
+  font-family: "IBM Plex Mono";
+  font-weight: 600;
+  font-size: 13px;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  text-decoration: none;
+  border-radius: 0 0 var(--radius) 0;
+  transform: translateY(-100%);
+
+  &:focus {
+    transform: translateY(0);
+  }
+}
