@@ -35,6 +35,9 @@ jobs:
       - name: Publish
         run: dotnet publish ${{ env.PROJECT_PATH }} --configuration Release --no-build --output ${{ env.AZURE_WEBAPP_PACKAGE_PATH }}
 
+      - name: Debug - well-known after publish
+        run: find ${{ env.AZURE_WEBAPP_PACKAGE_PATH }}/wwwroot/.well-known -type f 2>&1 || echo "MISSING after publish"
+
       - name: Upload artifact
         uses: actions/upload-artifact@v4
         with:
@@ -51,6 +54,9 @@ jobs:
         with:
           name: webapp
           path: ${{ env.AZURE_WEBAPP_PACKAGE_PATH }}
+
+      - name: Debug - well-known after download
+        run: find ${{ env.AZURE_WEBAPP_PACKAGE_PATH }}/wwwroot/.well-known -type f 2>&1 || echo "MISSING after download"
 
       - name: Deploy to Azure Web App
         id: deploy-to-webapp
