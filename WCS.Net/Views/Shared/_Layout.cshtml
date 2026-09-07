@@ -7,7 +7,11 @@
     <meta name="description" content="@(ViewData["Description"] ?? "World Cryo Services — independent cryogenic butterfly valve service and spare parts for LNG carriers.")" />
     <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
 
-	<link rel="canonical" href="https://www.wcryoservices.com">
+    @{
+        var canonicalPath = Context.Request.Path.Value?.TrimEnd('/') ?? "";
+        var canonicalUrl = "https://www.wcryoservices.com" + canonicalPath;
+    }
+    <link rel="canonical" href="@canonicalUrl">
 
     <meta name="theme-color" content="#0F75BD">
     <meta name="apple-mobile-web-app-status-bar-style" content="#0F75BD">
