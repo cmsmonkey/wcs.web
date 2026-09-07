@@ -1,0 +1,12 @@
+{
+  "linkset": [
+    {
+      "service-doc": [
+        {
+          "href": "https://www.wcryoservices.com/llms.txt",
+          "type": "text/plain"
+        }
+      ]
+    }
+  ]
+}
