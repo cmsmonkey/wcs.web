@@ -10,8 +10,11 @@
     @{
         var canonicalPath = Context.Request.Path.Value?.TrimEnd('/') ?? "";
         var canonicalUrl = "https://www.wcryoservices.com" + canonicalPath;
+        var markdownPath = string.IsNullOrEmpty(canonicalPath) ? "/index.md" : canonicalPath + ".md";
+        var markdownUrl = "https://www.wcryoservices.com" + markdownPath;
     }
     <link rel="canonical" href="@canonicalUrl">
+    <link rel="alternate" type="text/markdown" href="@markdownUrl" title="Markdown version of this page">
 
     <meta name="theme-color" content="#0F75BD">
     <meta name="apple-mobile-web-app-status-bar-style" content="#0F75BD">
