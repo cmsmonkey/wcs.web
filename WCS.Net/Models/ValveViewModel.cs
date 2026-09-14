@@ -28,6 +28,9 @@ public class ValveViewModel
     public required IReadOnlyList<string> IntroParagraphs { get; init; }
     public required IReadOnlyList<ValvePhoto> Photos { get; init; }
 
+    /// <summary>Names of the seal types WCS sells for this valve. Plain list — no links, prices, or other detail.</summary>
+    public required IReadOnlyList<string> SealTypes { get; init; }
+
     /// <summary>Optional extra callout block rendered below the photo grid (e.g. a related product line).</summary>
     public ValveCallout? Callout { get; init; }
 }

@@ -1,10 +1,11 @@
 namespace WCS.Net.Models;
 
-// TODO: replace the placeholder Name/Kicker/Teaser/IntroParagraphs/Photos below with the
-// real copy and photos for each valve type once they're ready. The real HQ/Acto parts
+// TODO: replace the placeholder Name/Kicker/Teaser/IntroParagraphs/Photos/SealTypes below
+// with the real copy and photos for each valve type once they're ready. The real HQ/Acto parts
 // photos (moved off the Home page) landed on Valve A, and the LPG seals callout landed
 // on Valve B — pure guesses on our part since "Valve A/B/C/D" aren't real valve type
-// names yet. Re-assign them once the real valve identities are decided.
+// names yet. Re-assign them once the real valve identities are decided. SealTypes are
+// generic placeholders too — swap in the real seal category names once we have them.
 public static class ValveCatalog
 {
     public static readonly IReadOnlyList<ValveViewModel> All = new[]
@@ -33,6 +34,13 @@ public static class ValveCatalog
                 new ValvePhoto { Src = "/images/parts/seal-kit-1.jpg", Alt = "HQ and Acto cylinder seal kit, assembled", Caption = "HQ & ACTO CYLINDER SEAL KITS" },
                 new ValvePhoto { Src = "/images/parts/seal-kit-2.jpg", Alt = "HQ and Acto cylinder seal kit, alternate", Caption = "HQ 400 CYLINDERS — MORE SIZES IN PROGRESS" },
                 new ValvePhoto { Src = "/images/parts/hydraulic-block-blind-plug.jpg", Alt = "HQ hydraulic block blind plug", Caption = "HQ HYDRAULIC BLOCK BLIND PLUG" },
+            },
+            SealTypes = new[]
+            {
+                "Placeholder seal type 1",
+                "Placeholder seal type 2",
+                "Placeholder seal type 3",
+                "Placeholder seal type 4",
             },
         },
         new ValveViewModel
@@ -66,6 +74,13 @@ public static class ValveCatalog
                        "the most common sizes for shorter lead times and fast worldwide delivery. The 25% Price " +
                        "Guarantee applies here too.",
             },
+            SealTypes = new[]
+            {
+                "Placeholder seal type 1",
+                "Placeholder seal type 2",
+                "Placeholder seal type 3",
+                "Placeholder seal type 4",
+            },
         },
         new ValveViewModel
         {
@@ -89,6 +104,13 @@ public static class ValveCatalog
                 new ValvePhoto { Src = "/images/valves/valve-c/photo-3.svg", Alt = "Placeholder photo of Valve C, 3 of 4" },
                 new ValvePhoto { Src = "/images/valves/valve-c/photo-4.svg", Alt = "Placeholder photo of Valve C, 4 of 4" },
             },
+            SealTypes = new[]
+            {
+                "Placeholder seal type 1",
+                "Placeholder seal type 2",
+                "Placeholder seal type 3",
+                "Placeholder seal type 4",
+            },
         },
         new ValveViewModel
         {
@@ -111,6 +133,13 @@ public static class ValveCatalog
                 new ValvePhoto { Src = "/images/valves/valve-d/photo-2.svg", Alt = "Placeholder photo of Valve D, 2 of 4" },
                 new ValvePhoto { Src = "/images/valves/valve-d/photo-3.svg", Alt = "Placeholder photo of Valve D, 3 of 4" },
                 new ValvePhoto { Src = "/images/valves/valve-d/photo-4.svg", Alt = "Placeholder photo of Valve D, 4 of 4" },
+            },
+            SealTypes = new[]
+            {
+                "Placeholder seal type 1",
+                "Placeholder seal type 2",
+                "Placeholder seal type 3",
+                "Placeholder seal type 4",
             },
         },
     };
