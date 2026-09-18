@@ -1,0 +1,12 @@
+{
+  "version": "0.0.1",
+  "configurations": [
+    {
+      "name": "wcs-web",
+      "runtimeExecutable": "dotnet",
+      "runtimeArgs": ["run", "--project", "WCS.Net", "--launch-profile", "https"],
+      "port": 7129,
+      "url": "https://localhost:7129"
+    }
+  ]
+}
