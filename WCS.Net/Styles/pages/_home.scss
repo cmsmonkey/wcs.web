@@ -15,12 +15,20 @@
 }
 
 .hero h1 {
-  font-size: clamp(42px, 6vw, 74px);
+  font-size: clamp(42px, 6vw, 48px);
   line-height: 0.98;
   margin: 16px 0 22px;
 
   .accent {
     color: var(--cyan);
+  }
+}
+
+.hero {
+  .tagline {
+    .accent {
+      color: var(--cyan);
+    }
   }
 }
 

@@ -19,7 +19,7 @@ public static class ValveCatalog
             IntroParagraphs = new[]
             {
                 "Klinger Westad LNG butterfly valves are among the most widely used cryogenic valves on LNG carriers worldwide. WCS was the first independent company to give shipowners a genuine alternative for spares and service.",
-                "We supply the full range of Klinger Westad spare and actuator parts — including HQ limitswitch boxes, Acto distribution bars, and HQ/Acto cylinder seal kits — and carry out service and overhaul both on board and in dock. Our metal seals are manufactured in-house in Norway; we're also the only supplier of seals for older Klinger Westad gate valves the manufacturer no longer produces. Every WCS-manufactured part carries our 25% Price Guarantee against the OEM price.",
+                "We service and supply the full range of Klinger Westad spare and actuator parts — including HQ limitswitch boxes, Acto distribution bars, and HQ/Acto cylinder seal kits — and carry out service and overhaul both on board and in dock. Our metal seals are manufactured in-house in Norway; we're also the only supplier of seals for older Klinger Westad gate valves the manufacturer no longer produces. Every WCS-manufactured part carries our 25% Price Guarantee against the OEM price.",
             },
             Photos = new[]
             {
@@ -60,7 +60,7 @@ public static class ValveCatalog
             IntroParagraphs = new[]
             {
                 "KSB Amri LNG butterfly valves use the same metal-to-metal sealing technology as Klinger Westad.",
-                "We supply spare parts, actuator parts, flange gaskets, and HQ actuator cylinders for KSB Amri equipment, with service on board or in dock. Metal seals, including the larger Danais-size range, are manufactured in-house in Norway, backed by our 25% Price Guarantee against the OEM price.",
+                "We service and supply spare parts, actuator parts, flange gaskets, and HQ actuator cylinders for KSB Amri equipment, with service on board or in dock. Metal seals, including the larger Danais-size range, are manufactured in-house in Norway, backed by our 25% Price Guarantee against the OEM price.",
             },
             Photos = new[]
             {

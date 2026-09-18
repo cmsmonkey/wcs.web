@@ -1,0 +1,36 @@
+// Boxed, table-like presentation for a flat list of items — e.g. the valve
+// detail page's "Seal Types" list.
+.seal-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  counter-reset: seal-row;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  overflow: hidden;
+
+  li {
+    counter-increment: seal-row;
+    display: flex;
+    align-items: baseline;
+    gap: 18px;
+    padding: 16px 22px;
+    background: var(--surface);
+    border-top: 1px solid var(--line);
+    font-size: 15px;
+
+    &:first-child {
+      border-top: none;
+    }
+
+    &::before {
+      content: counter(seal-row, decimal-leading-zero);
+      flex: none;
+      width: 2ch;
+      font-family: "IBM Plex Mono";
+      font-size: 12px;
+      font-weight: 600;
+      color: var(--cyan);
+    }
+  }
+}
