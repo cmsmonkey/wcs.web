@@ -129,6 +129,32 @@ public static class ValveCatalog
                 "General Consumables - Grafoil Tape, Locking Wire, Molykote, & Lubricants",
             },
         },
+        new ValveViewModel
+        {
+            Slug = "danfoss",
+            Name = "Danfoss",
+            Kicker = "Service & Spare Parts",
+            Teaser = "Actuator seal kits for Danfoss actuators fitted to LNG and LPG butterfly valves — typically 20–40% below OEM pricing.",
+            ThumbnailSrc = "/images/valves/danfoss/thumb.svg",
+            ThumbnailAlt = "Placeholder card thumbnail for Danfoss",
+            IntroParagraphs = new[]
+            {
+                "Danfoss actuators are fitted to many of the LNG and LPG butterfly valves WCS already services, and their original seal kits are frequently affected by long OEM lead times and high pricing.",
+                "WCS supplies drop-in replacement seal kits for Danfoss actuators, manufactured to the same specification as the OEM part, typically 20–40% below OEM pricing — with our 25% Price Guarantee available on request.",
+            },
+            Photos = new[]
+            {
+                new ValvePhoto { Src = "/images/valves/danfoss/photo-1.svg", Alt = "Placeholder photo of Danfoss actuator, 1 of 4" },
+                new ValvePhoto { Src = "/images/valves/danfoss/photo-2.svg", Alt = "Placeholder photo of Danfoss actuator, 2 of 4" },
+                new ValvePhoto { Src = "/images/valves/danfoss/photo-3.svg", Alt = "Placeholder photo of Danfoss actuator, 3 of 4" },
+                new ValvePhoto { Src = "/images/valves/danfoss/photo-4.svg", Alt = "Placeholder photo of Danfoss actuator, 4 of 4" },
+            },
+            SealTypes = new[]
+            {
+                "Danfoss Actuator Seal Kits",
+                "General Consumables - Grafoil Tape, Locking Wire, Molykote, & Lubricants",
+            },
+        },
     };
 
     public static ValveViewModel? FindBySlug(string slug) =>
