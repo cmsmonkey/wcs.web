@@ -37,7 +37,7 @@ public static class ValveCatalog
                 "LNG PTFE Seals 150–600 mm",
                 "LPG HPBV Seals 150–350 mm",
                 "LNG Spares & Actuator Parts",
-                "General Consumables (Locking Wire, Molykote & Lubricants)",
+                "General Consumables - Grafoil Tape, Locking Wire, Molykote, & Lubricants",
             },
             Callout = new ValveCallout
             {
@@ -74,7 +74,7 @@ public static class ValveCatalog
                 "LNG Metal Seals (Danais) 300–500 mm",
                 "LNG Spares, Gaskets & Actuator Parts",
                 "HQ Actuator Cylinders",
-                "General Consumables (Locking Wire, Molykote & Lubricants)",
+                "General Consumables - Grafoil Tape, Locking Wire, Molykote, & Lubricants",
             },
         },
         new ValveViewModel
@@ -100,7 +100,7 @@ public static class ValveCatalog
             SealTypes = new[]
             {
                 "LNG Metal Seals 400–550 mm",
-                "General Consumables (Locking Wire, Molykote & Lubricants)",
+                "General Consumables - Grafoil Tape, Locking Wire, Molykote, & Lubricants",
             },
         },
         new ValveViewModel
@@ -126,7 +126,7 @@ public static class ValveCatalog
             SealTypes = new[]
             {
                 "LNG Seals 250–400 mm",
-                "General Consumables (Locking Wire, Molykote & Lubricants)",
+                "General Consumables - Grafoil Tape, Locking Wire, Molykote, & Lubricants",
             },
         },
     };
