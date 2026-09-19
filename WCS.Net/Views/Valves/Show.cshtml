@@ -62,6 +62,30 @@
     </div>
 </section>
 
+@if (Model.CaseStudies.Count > 0)
+{
+    <section style="background:var(--surface-alt);">
+        <div class="wrap">
+            <div class="section-head">
+                <span class="kicker">Case Studies</span>
+                <h2>From the workshop: documented @Model.Name repairs</h2>
+            </div>
+            <div class="case-study-grid">
+                @foreach (var caseStudy in Model.CaseStudies)
+                {
+                    <article class="case-study">
+                        <h3>@caseStudy.Title</h3>
+                        @foreach (var paragraph in caseStudy.Paragraphs)
+                        {
+                            <p>@paragraph</p>
+                        }
+                    </article>
+                }
+            </div>
+        </div>
+    </section>
+}
+
 @if (Model.Faqs.Count > 0)
 {
     <section>

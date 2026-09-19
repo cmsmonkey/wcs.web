@@ -20,6 +20,13 @@ public class ValveFaq
     public required string Answer { get; init; }
 }
 
+/// <summary>A documented repair, grounded in real before/after photos — not written unless that evidence exists.</summary>
+public class ValveCaseStudy
+{
+    public required string Title { get; init; }
+    public required IReadOnlyList<string> Paragraphs { get; init; }
+}
+
 public class ValveViewModel
 {
     public required string Slug { get; init; }
@@ -48,4 +55,8 @@ public class ValveViewModel
 
     /// <summary>Frequently asked questions, rendered on the page and as FAQPage JSON-LD.</summary>
     public required IReadOnlyList<ValveFaq> Faqs { get; init; }
+
+    /// <summary>Optional documented repair case studies. Only set where real before/after evidence exists —
+    /// most valves currently have placeholder photos and no case study material yet.</summary>
+    public IReadOnlyList<ValveCaseStudy> CaseStudies { get; init; } = Array.Empty<ValveCaseStudy>();
 }

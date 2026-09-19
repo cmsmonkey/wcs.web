@@ -73,6 +73,27 @@ public static class ValveCatalog
                     Answer = "Yes, WCS carries out service and overhaul on Klinger Westad valves and actuators both on board and in dock.",
                 },
             },
+            CaseStudies = new[]
+            {
+                new ValveCaseStudy
+                {
+                    Title = "HQ Limitswitch Box: Worn Original to 316L Stainless Rebuild",
+                    Paragraphs = new[]
+                    {
+                        "The HQ limitswitch box pictured above came in after years of service in the marine cryogenic environment — worn to the point where the original was no longer fit to remain in service.",
+                        "WCS reverse-engineered the part to the original dimensions and manufactured a direct replacement in-house in Norway, in 316L stainless steel — an upgrade in corrosion resistance over the original material, while keeping it a drop-in fit for the existing HQ actuator. The rebuilt box is covered by the same 25% Price Guarantee as the rest of our Klinger Westad range.",
+                    },
+                },
+                new ValveCaseStudy
+                {
+                    Title = "Acto Distribution Bar: Corroded Original to Newly Machined Replacement",
+                    Paragraphs = new[]
+                    {
+                        "The Acto distribution bar shown above was corroded after years in service — a common failure point on older actuators.",
+                        "WCS machined a replacement in-house in Norway to the original specification, restoring a fully compatible, drop-in part without waiting on OEM lead times.",
+                    },
+                },
+            },
         },
         new ValveViewModel
         {

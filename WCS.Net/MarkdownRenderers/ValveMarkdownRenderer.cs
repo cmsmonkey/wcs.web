@@ -37,6 +37,22 @@ public static class ValveMarkdownRenderer
             sb.AppendLine();
         }
 
+        if (valve.CaseStudies.Count > 0)
+        {
+            sb.AppendLine("## Case Studies");
+            sb.AppendLine();
+            foreach (var caseStudy in valve.CaseStudies)
+            {
+                sb.AppendLine($"### {caseStudy.Title}");
+                sb.AppendLine();
+                foreach (var paragraph in caseStudy.Paragraphs)
+                {
+                    sb.AppendLine(paragraph);
+                    sb.AppendLine();
+                }
+            }
+        }
+
         if (valve.Faqs.Count > 0)
         {
             sb.AppendLine("## FAQ");
