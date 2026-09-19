@@ -23,9 +23,9 @@ h1, h2, h3 {
 
 .kicker {
   font-family: "IBM Plex Mono", monospace;
-  font-size: 12.5px;
+  font-size: 0.78125em;
   font-weight: 600;
   letter-spacing: 0.16em;
-  text-transform: uppercase;
+  text-transform: none;
   color: var(--cyan);
 }

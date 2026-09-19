@@ -29,6 +29,6 @@ public class ValvesController : Controller
             return NotFound();
         }
 
-        return Content(ValveMarkdownRenderer.Render(valve), "text/markdown");
+        return Content(ValveMarkdownRenderer.Render(valve), "text/markdown; charset=utf-8");
     }
 }

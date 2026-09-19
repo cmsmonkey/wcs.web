@@ -33,7 +33,7 @@
 }
 
 .hero p.lede {
-  font-size: 18px;
+  font-size: 1.125em;
   color: var(--muted);
   max-width: 46ch;
   margin: 0 0 32px;
@@ -59,7 +59,7 @@
   figcaption {
     margin-top: 10px;
     font-family: "IBM Plex Mono";
-    font-size: 11px;
+    font-size: 0.6875em;
     color: var(--muted);
     letter-spacing: 0.03em;
   }
@@ -136,11 +136,11 @@
 .guarantee p {
   color: var(--band-muted);
   max-width: 60ch;
-  font-size: 16.5px;
+  font-size: 1.03125em;
 }
 
 .fineprint {
-  font-size: 12.5px;
+  font-size: 0.78125em;
   color: var(--band-muted);
   opacity: 0.75;
   margin-top: 22px;
@@ -171,7 +171,7 @@
   figcaption {
     margin-top: 10px;
     font-family: "IBM Plex Mono";
-    font-size: 11px;
+    font-size: 0.6875em;
     color: var(--muted);
   }
 }
@@ -195,7 +195,7 @@
   }
 
   h3 {
-    font-size: 26px;
+    font-size: 1.625em;
     margin-bottom: 14px;
   }
 
@@ -223,7 +223,7 @@
 
   p {
     color: var(--band-muted);
-    font-size: 15.5px;
+    font-size: 0.96875em;
     margin: 0 0 14px;
   }
 }
@@ -242,7 +242,7 @@
     color: var(--band-muted);
     max-width: 56ch;
     margin: 0 auto 40px;
-    font-size: 17px;
+    font-size: 1.0625em;
   }
 }
 
@@ -260,7 +260,7 @@
   justify-content: center;
   flex-wrap: wrap;
   font-family: "IBM Plex Mono";
-  font-size: 14px;
+  font-size: 0.875em;
   color: var(--band-muted);
 
   a {

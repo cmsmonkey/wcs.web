@@ -20,7 +20,7 @@
 
   .tag {
     font-family: "IBM Plex Mono";
-    font-size: 11px;
+    font-size: 0.6875em;
     letter-spacing: 0.1em;
     text-transform: uppercase;
     color: var(--brass);
@@ -32,21 +32,21 @@
     font-family: "IBM Plex Sans";
     text-transform: none;
     font-weight: 700;
-    font-size: 18px;
+    font-size: 1.125em;
     letter-spacing: 0;
     margin-bottom: 10px;
   }
 
   p {
     color: var(--muted);
-    font-size: 14.5px;
+    font-size: 0.90625em;
     margin: 0;
   }
 
   .stat {
     font-family: "Big Shoulders Display";
     font-weight: 800;
-    font-size: 40px;
+    font-size: 2.5em;
     color: var(--ink);
     line-height: 1;
     margin-bottom: 8px;
@@ -84,14 +84,14 @@
     font-family: "IBM Plex Sans";
     text-transform: none;
     font-weight: 700;
-    font-size: 15px;
+    font-size: 0.9375em;
     letter-spacing: 0;
     margin-bottom: 8px;
   }
 
   p {
     margin: 0;
-    font-size: 13.5px;
+    font-size: 0.84375em;
     color: var(--muted);
   }
 }
@@ -123,14 +123,14 @@
     font-family: "IBM Plex Sans";
     text-transform: none;
     font-weight: 700;
-    font-size: 16.5px;
+    font-size: 1.03125em;
     letter-spacing: 0;
     margin-bottom: 2px;
   }
 
   .role {
     font-family: "IBM Plex Mono";
-    font-size: 11px;
+    font-size: 0.6875em;
     letter-spacing: 0.05em;
     text-transform: uppercase;
     color: var(--cyan);
@@ -140,7 +140,7 @@
 
   p {
     margin: 0;
-    font-size: 13.5px;
+    font-size: 0.84375em;
     color: var(--muted);
   }
 }
@@ -148,6 +148,6 @@
 .team-intro {
   max-width: 74ch;
   color: var(--muted);
-  font-size: 16px;
+  font-size: 1em;
   margin: 14px 0 0;
 }

@@ -17,7 +17,7 @@
     padding: 16px 22px;
     background: var(--surface);
     border-top: 1px solid var(--line);
-    font-size: 15px;
+    font-size: 0.9375em;
 
     &:first-child {
       border-top: none;
@@ -28,7 +28,8 @@
       flex: none;
       width: 2ch;
       font-family: "IBM Plex Mono";
-      font-size: 12px;
+      // Relative to this li's own 0.9375em (15px), not the page root — 12/15, not 12/16.
+      font-size: 0.8em;
       font-weight: 600;
       color: var(--cyan);
     }

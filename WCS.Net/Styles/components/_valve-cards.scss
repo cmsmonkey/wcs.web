@@ -50,7 +50,7 @@
     font-family: "IBM Plex Sans";
     text-transform: none;
     font-weight: 700;
-    font-size: 17px;
+    font-size: 1.0625em;
     letter-spacing: 0;
     margin: 10px 0 8px;
   }
@@ -58,14 +58,14 @@
   p {
     margin: 0 0 14px;
     color: var(--muted);
-    font-size: 14px;
+    font-size: 0.875em;
     flex: 1;
   }
 }
 
 .valve-card-link {
   font-family: "IBM Plex Mono";
-  font-size: 12px;
+  font-size: 0.75em;
   font-weight: 600;
   letter-spacing: 0.04em;
   text-transform: uppercase;

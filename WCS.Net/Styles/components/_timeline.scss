@@ -27,7 +27,7 @@
 
   .tlabel {
     font-family: "IBM Plex Mono";
-    font-size: 11px;
+    font-size: 0.6875em;
     letter-spacing: 0.09em;
     text-transform: uppercase;
     color: var(--band-cyan);
@@ -35,7 +35,7 @@
   }
 
   .tbody {
-    font-size: 15px;
+    font-size: 0.9375em;
     color: var(--band-ink);
 
     b {

@@ -30,7 +30,7 @@ header {
 .brand-word {
   font-family: "Big Shoulders Display";
   font-weight: 800;
-  font-size: 19px;
+  font-size: 1.1875em;
   letter-spacing: 0.02em;
   color: var(--ink);
   white-space: nowrap;
@@ -38,11 +38,17 @@ header {
 
 nav.links {
   display: flex;
-  gap: 28px;
+  gap: 16px;
   align-items: center;
 
   a {
-    font-size: 14px;
+    display: inline-flex;
+    align-items: center;
+    // Padding brings the click/tap surface to a 44px-tall minimum target, per WCAG 2.5.5.
+    padding: 11px 6px;
+    min-height: 44px;
+    box-sizing: border-box;
+    font-size: 0.9375em;
     font-weight: 500;
     text-decoration: none;
     color: var(--muted);
@@ -62,7 +68,7 @@ nav.links {
 
 .phonelink {
   font-family: "IBM Plex Mono";
-  font-size: 14px;
+  font-size: 0.875em;
   font-weight: 600;
   text-decoration: none;
   color: var(--ink);
@@ -90,11 +96,11 @@ nav.links {
   }
 
   .brand-word {
-    font-size: 14px;
+    font-size: 0.875em;
   }
 
   .navcta .btn {
     padding: 10px 14px;
-    font-size: 11px;
+    font-size: 0.6875em;
   }
 }
