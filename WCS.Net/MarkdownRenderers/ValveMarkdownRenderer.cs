@@ -78,6 +78,14 @@ public static class ValveMarkdownRenderer
             sb.AppendLine();
         }
 
+        if (!string.IsNullOrEmpty(valve.History))
+        {
+            sb.AppendLine($"## About {valve.Name}");
+            sb.AppendLine();
+            sb.AppendLine(valve.History);
+            sb.AppendLine();
+        }
+
         sb.AppendLine("## Get a Quote");
         sb.AppendLine();
         sb.AppendLine("Send the final quote you've received for valve or actuator spares, and we'll tell you — in writing — how much lower we can go.");

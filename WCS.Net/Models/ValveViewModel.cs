@@ -59,4 +59,9 @@ public class ValveViewModel
     /// <summary>Optional documented repair case studies. Only set where real before/after evidence exists —
     /// most valves currently have placeholder photos and no case study material yet.</summary>
     public IReadOnlyList<ValveCaseStudy> CaseStudies { get; init; } = Array.Empty<ValveCaseStudy>();
+
+    /// <summary>Short paragraph on the OEM manufacturer's own company history — set only where the facts
+    /// have been independently verified (not for every valve; e.g. no verifiable source exists for
+    /// "Royal Goodwin" as a company).</summary>
+    public string? History { get; init; }
 }

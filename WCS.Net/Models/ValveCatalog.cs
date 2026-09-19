@@ -94,6 +94,7 @@ public static class ValveCatalog
                     },
                 },
             },
+            History = "Klinger Westad traces back to 1895, when Daniel Westad founded a valve manufacturing company in Geithus, Norway, originally serving the local pulp and paper industry. The company moved into marine applications around 1950, began building valves for LNG in the 1960s, and produced its first LNG butterfly valve in 1975 — pioneering the cryogenic butterfly valve technology still used across the industry today. Klinger Westad remains headquartered in Geithus and is now part of the international KLINGER Group.",
         },
         new ValveViewModel
         {
@@ -147,6 +148,7 @@ public static class ValveCatalog
                     Answer = "Yes, service is available both on board and in dock.",
                 },
             },
+            History = "The AMRI brand traces back to 1959, when a French manufacturer built what became the world's second-largest butterfly valve producer, based in La Roche-Chalais with a research centre near Bordeaux. German pump and valve group KSB acquired AMRI in 1989, making KSB the world leader in cryogenic valves and the French leader in butterfly valves. The AMRI name has continued to change hands since — its North American operations were acquired by Bray International in 2016 and now trade as Amresist — a reminder of how much this market has consolidated around a small number of OEMs.",
         },
         new ValveViewModel
         {
@@ -193,6 +195,7 @@ public static class ValveCatalog
                     Answer = "PK Valves use the same metal-to-metal sealing technology found in Klinger Westad and KSB Amri LNG butterfly valves.",
                 },
             },
+            History = "PK Valve was established in Changwon, South Korea, in 1946, and became the first company to move into the newly created Changwon National Industrial Complex in 1974. Over more than seven decades it grew into one of Korea's leading industrial valve manufacturers, developing cryogenic and butterfly valve lines used in LNG, petrochemical, and power-generation applications in more than 70 countries. Its metal-to-metal sealing butterfly valves use the same underlying technology as Klinger Westad and KSB Amri, which is why WCS has been able to extend its in-house seal manufacturing to cover PK Valves as well.",
         },
         new ValveViewModel
         {
@@ -290,6 +293,7 @@ public static class ValveCatalog
                     Answer = "Original Danfoss seal kits are frequently affected by long OEM lead times and high pricing — WCS supplies drop-in replacements typically 20–40% below OEM cost without the wait.",
                 },
             },
+            History = "Danfoss was founded on 1 September 1933, when Mads Clausen began building refrigeration valves in his parents' farmhouse in Nordborg, Denmark — originally under the name Dansk Køleautomatik- og Apparatfabrik, renamed Danfoss in 1946. What started as one person's workshop grew into one of Denmark's largest industrial groups, spanning heating, cooling, drives, and power solutions worldwide. Danfoss doesn't manufacture the LNG and LPG butterfly valves WCS services — its actuators are fitted to valves from several manufacturers, which is why original Danfoss actuator seal kits are a recurring spare-parts need across the fleet.",
         },
     };
 

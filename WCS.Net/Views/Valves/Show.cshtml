@@ -122,4 +122,17 @@
     </div>
 </section>
 
+@if (!string.IsNullOrEmpty(Model.History))
+{
+    <section>
+        <div class="wrap">
+            <div class="section-head">
+                <span class="kicker">Manufacturer History</span>
+                <h2>About @Model.Name</h2>
+            </div>
+            <p class="history-text">@Model.History</p>
+        </div>
+    </section>
+}
+
 <partial name="_QuoteCta" />
