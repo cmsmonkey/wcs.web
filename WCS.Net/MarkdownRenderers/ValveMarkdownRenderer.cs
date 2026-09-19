@@ -37,6 +37,19 @@ public static class ValveMarkdownRenderer
             sb.AppendLine();
         }
 
+        if (valve.Faqs.Count > 0)
+        {
+            sb.AppendLine("## FAQ");
+            sb.AppendLine();
+            foreach (var faq in valve.Faqs)
+            {
+                sb.AppendLine($"**{faq.Question}**");
+                sb.AppendLine();
+                sb.AppendLine(faq.Answer);
+                sb.AppendLine();
+            }
+        }
+
         var others = ValveCatalog.AllExcept(valve.Slug).ToList();
         if (others.Count > 0)
         {

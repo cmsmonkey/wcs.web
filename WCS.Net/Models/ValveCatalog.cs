@@ -50,6 +50,29 @@ public static class ValveCatalog
                        "the most common sizes for shorter lead times and fast worldwide delivery. The 25% Price " +
                        "Guarantee applies here too.",
             },
+            Faqs = new[]
+            {
+                new ValveFaq
+                {
+                    Question = "Is WCS an authorized Klinger Westad dealer?",
+                    Answer = "No — WCS is an independent supplier, not affiliated with Klinger Westad. Our parts are manufactured to the same specification as the OEM part and designed as direct, fully compatible replacements, backed by our 25% Price Guarantee against the OEM price.",
+                },
+                new ValveFaq
+                {
+                    Question = "Can I still get seals for older Klinger Westad gate valves?",
+                    Answer = "Yes. Klinger Westad no longer produces seals for its older gate valves, but WCS manufactures and supplies them in-house in Norway — we're currently the only supplier able to do so.",
+                },
+                new ValveFaq
+                {
+                    Question = "What Klinger Westad parts does WCS supply?",
+                    Answer = "LNG metal and PTFE seals, LPG HPBV seals, HQ limitswitch boxes, Acto distribution bars, and HQ/Acto cylinder seal kits, plus general consumables such as Grafoil tape and Molykote.",
+                },
+                new ValveFaq
+                {
+                    Question = "Can Klinger Westad valves be serviced on board?",
+                    Answer = "Yes, WCS carries out service and overhaul on Klinger Westad valves and actuators both on board and in dock.",
+                },
+            },
         },
         new ValveViewModel
         {
@@ -80,6 +103,29 @@ public static class ValveCatalog
                 "HQ Actuator Cylinders",
                 "General Consumables - Grafoil Tape, Locking Wire, Molykote, & Lubricants",
             },
+            Faqs = new[]
+            {
+                new ValveFaq
+                {
+                    Question = "Is WCS an authorized KSB Amri dealer?",
+                    Answer = "No — WCS is an independent supplier, not affiliated with KSB Amri. Our parts are designed as direct OEM-compatible replacements and carry our 25% Price Guarantee against the OEM price.",
+                },
+                new ValveFaq
+                {
+                    Question = "What KSB Amri parts does WCS supply?",
+                    Answer = "Spare parts, actuator parts, flange gaskets, HQ actuator cylinders, and metal seals including the larger Danais-size range — all manufactured in-house in Norway.",
+                },
+                new ValveFaq
+                {
+                    Question = "Do KSB Amri valves use the same sealing technology as Klinger Westad?",
+                    Answer = "Yes — KSB Amri LNG butterfly valves use the same metal-to-metal sealing technology as Klinger Westad, which is why WCS applies the same in-house manufacturing process to both.",
+                },
+                new ValveFaq
+                {
+                    Question = "Can KSB Amri valves be serviced on board?",
+                    Answer = "Yes, service is available both on board and in dock.",
+                },
+            },
         },
         new ValveViewModel
         {
@@ -107,6 +153,24 @@ public static class ValveCatalog
             {
                 "LNG Metal Seals 400–550 mm",
                 "General Consumables - Grafoil Tape, Locking Wire, Molykote, & Lubricants",
+            },
+            Faqs = new[]
+            {
+                new ValveFaq
+                {
+                    Question = "Does WCS supply spare parts for PK Valves?",
+                    Answer = "Yes — PK Valves is the newest addition to WCS's LNG butterfly valve range. We currently supply metal-to-metal seals in the 400–550mm range, with more sizes in progress.",
+                },
+                new ValveFaq
+                {
+                    Question = "Is WCS an authorized PK Valves dealer?",
+                    Answer = "No — WCS is an independent supplier, not affiliated with PK Valves. Contact us to check current availability for your specific valve size.",
+                },
+                new ValveFaq
+                {
+                    Question = "What sealing technology do PK Valves use?",
+                    Answer = "PK Valves use the same metal-to-metal sealing technology found in Klinger Westad and KSB Amri LNG butterfly valves.",
+                },
             },
         },
         new ValveViewModel
@@ -136,6 +200,24 @@ public static class ValveCatalog
                 "LNG Seals 250–400 mm",
                 "General Consumables - Grafoil Tape, Locking Wire, Molykote, & Lubricants",
             },
+            Faqs = new[]
+            {
+                new ValveFaq
+                {
+                    Question = "Is Royal Goodwin still making seals for these valves?",
+                    Answer = "No — Royal Goodwin no longer produces seals for its older LNG valves. WCS is the only supplier able to manufacture and supply replacement seals for this equipment.",
+                },
+                new ValveFaq
+                {
+                    Question = "Is WCS an authorized Royal Goodwin dealer?",
+                    Answer = "No — WCS is an independent supplier, not affiliated with Royal Goodwin. We manufacture replacement seals in-house and back them with our 25% Price Guarantee against the OEM price.",
+                },
+                new ValveFaq
+                {
+                    Question = "What sizes are available?",
+                    Answer = "We currently supply LNG seals in the 250–400mm range for Royal Goodwin valves.",
+                },
+            },
         },
         new ValveViewModel
         {
@@ -163,6 +245,29 @@ public static class ValveCatalog
             {
                 "Danfoss Actuator Seal Kits",
                 "General Consumables - Grafoil Tape, Locking Wire, Molykote, & Lubricants",
+            },
+            Faqs = new[]
+            {
+                new ValveFaq
+                {
+                    Question = "Are WCS Danfoss actuator seal kits genuine OEM parts?",
+                    Answer = "No — WCS is an independent supplier, not affiliated with Danfoss. Our seal kits are manufactured to the same specification as the OEM part and installed as a drop-in replacement.",
+                },
+                new ValveFaq
+                {
+                    Question = "How much cheaper are WCS Danfoss seal kits than OEM?",
+                    Answer = "Typically 20–40% below OEM pricing, with our 25% Price Guarantee available on request.",
+                },
+                new ValveFaq
+                {
+                    Question = "Which valves are these Danfoss actuator seal kits for?",
+                    Answer = "Danfoss actuators are fitted to many of the LNG and LPG butterfly valves WCS already services, so if you have a Danfoss-actuated valve on board, we likely already support it.",
+                },
+                new ValveFaq
+                {
+                    Question = "Why buy Danfoss seal kits from WCS instead of Danfoss directly?",
+                    Answer = "Original Danfoss seal kits are frequently affected by long OEM lead times and high pricing — WCS supplies drop-in replacements typically 20–40% below OEM cost without the wait.",
+                },
             },
         },
     };

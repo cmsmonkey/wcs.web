@@ -14,6 +14,12 @@ public class ValveCallout
     public required string Body { get; init; }
 }
 
+public class ValveFaq
+{
+    public required string Question { get; init; }
+    public required string Answer { get; init; }
+}
+
 public class ValveViewModel
 {
     public required string Slug { get; init; }
@@ -39,4 +45,7 @@ public class ValveViewModel
 
     /// <summary>Optional extra callout block rendered below the photo grid (e.g. a related product line).</summary>
     public ValveCallout? Callout { get; init; }
+
+    /// <summary>Frequently asked questions, rendered on the page and as FAQPage JSON-LD.</summary>
+    public required IReadOnlyList<ValveFaq> Faqs { get; init; }
 }

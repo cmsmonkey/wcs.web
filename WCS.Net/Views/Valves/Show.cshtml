@@ -62,6 +62,27 @@
     </div>
 </section>
 
+@if (Model.Faqs.Count > 0)
+{
+    <section>
+        <div class="wrap">
+            <div class="section-head">
+                <span class="kicker">FAQ</span>
+                <h2>@Model.Name spare parts & service — frequently asked questions</h2>
+            </div>
+            <div class="faq-list">
+                @foreach (var faq in Model.Faqs)
+                {
+                    <details>
+                        <summary>@faq.Question</summary>
+                        <p>@faq.Answer</p>
+                    </details>
+                }
+            </div>
+        </div>
+    </section>
+}
+
 <section style="background:var(--surface-alt);">
     <div class="wrap">
         <div class="section-head">

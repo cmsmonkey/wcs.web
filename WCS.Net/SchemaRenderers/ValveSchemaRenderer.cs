@@ -52,6 +52,27 @@ public static class ValveSchemaRenderer
             },
         };
 
-        return JsonSerializer.Serialize(new object[] { service, breadcrumbs }, Options);
+        var schemas = new List<object> { service, breadcrumbs };
+
+        if (valve.Faqs.Count > 0)
+        {
+            schemas.Add(new Dictionary<string, object?>
+            {
+                ["@context"] = "https://schema.org",
+                ["@type"] = "FAQPage",
+                ["mainEntity"] = valve.Faqs.Select(faq => new Dictionary<string, object?>
+                {
+                    ["@type"] = "Question",
+                    ["name"] = faq.Question,
+                    ["acceptedAnswer"] = new Dictionary<string, object?>
+                    {
+                        ["@type"] = "Answer",
+                        ["text"] = faq.Answer,
+                    },
+                }).ToList(),
+            });
+        }
+
+        return JsonSerializer.Serialize(schemas, Options);
     }
 }
