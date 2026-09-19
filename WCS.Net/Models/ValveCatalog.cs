@@ -14,6 +14,8 @@ public static class ValveCatalog
             Name = "Klinger Westad",
             Kicker = "Service & Spare Parts",
             Teaser = "Full parts and service support for Klinger Westad LNG butterfly valves and actuators — including seals for gate valves the manufacturer no longer makes.",
+            MetaTitle = "Klinger Westad Valve Spare Parts & Seals | WCS",
+            MetaDescription = "Independent spare parts and service for Klinger Westad LNG valves: metal & PTFE seals, HQ/Acto actuator parts, discontinued gate valve seals. 25% Price Guarantee.",
             ThumbnailSrc = "/images/valves/klinger-westad/thumb.svg",
             ThumbnailAlt = "Placeholder card thumbnail for Klinger Westad",
             IntroParagraphs = new[]
@@ -55,6 +57,8 @@ public static class ValveCatalog
             Name = "KSB Amri",
             Kicker = "Service & Spare Parts",
             Teaser = "Independent parts and service for KSB Amri LNG butterfly valves and actuators, including HQ actuator cylinders and Danais-size metal seals.",
+            MetaTitle = "KSB Amri Valve Spare Parts & Seals | WCS",
+            MetaDescription = "Independent spare parts and service for KSB Amri LNG valves: Danais-size metal seals, actuator parts, flange gaskets, HQ cylinders. 25% Price Guarantee.",
             ThumbnailSrc = "/images/valves/ksb-amri/thumb.svg",
             ThumbnailAlt = "Placeholder card thumbnail for KSB Amri",
             IntroParagraphs = new[]
@@ -83,6 +87,8 @@ public static class ValveCatalog
             Name = "PK Valves",
             Kicker = "Service & Spare Parts",
             Teaser = "WCS now supplies metal-to-metal seals for PK Valves — the newest addition to our LNG butterfly valve aftermarket range.",
+            MetaTitle = "PK Valves Spare Parts & Metal Seals | WCS",
+            MetaDescription = "Metal-to-metal seals and spare parts for PK Valves LNG butterfly valves, 400-550mm, from an independent supplier. 25% Price Guarantee vs. OEM pricing.",
             ThumbnailSrc = "/images/valves/pk-valves/thumb.svg",
             ThumbnailAlt = "Placeholder card thumbnail for PK Valves",
             IntroParagraphs = new[]
@@ -109,6 +115,8 @@ public static class ValveCatalog
             Name = "Royal Goodwin",
             Kicker = "Service & Spare Parts",
             Teaser = "The only independent supplier of seals for legacy Royal Goodwin LNG valves no longer supported by the manufacturer.",
+            MetaTitle = "Royal Goodwin Valve Seals & Spare Parts | WCS",
+            MetaDescription = "The only independent supplier of seals for legacy Royal Goodwin LNG valves the manufacturer no longer produces. 25% Price Guarantee vs. OEM.",
             ThumbnailSrc = "/images/valves/royal-goodwin/thumb.svg",
             ThumbnailAlt = "Placeholder card thumbnail for Royal Goodwin",
             IntroParagraphs = new[]
@@ -135,6 +143,8 @@ public static class ValveCatalog
             Name = "Danfoss",
             Kicker = "Service & Spare Parts",
             Teaser = "Actuator seal kits for Danfoss actuators fitted to LNG and LPG butterfly valves — typically 20–40% below OEM pricing.",
+            MetaTitle = "Danfoss Actuator Seal Kits & Spare Parts | WCS",
+            MetaDescription = "Drop-in replacement seal kits for Danfoss actuators on LNG/LPG butterfly valves, built to OEM spec at 20-40% below OEM pricing.",
             ThumbnailSrc = "/images/valves/danfoss/thumb.svg",
             ThumbnailAlt = "Placeholder card thumbnail for Danfoss",
             IntroParagraphs = new[]

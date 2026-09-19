@@ -1,5 +1,7 @@
 @model ValveViewModel
 
+<script type="application/ld+json">@Html.Raw(ValveSchemaRenderer.Render(Model))</script>
+
 <section class="page-header">
     <div class="wrap">
         <span class="kicker">@Model.Kicker</span>

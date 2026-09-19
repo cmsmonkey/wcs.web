@@ -22,6 +22,12 @@ public class ValveViewModel
 
     /// <summary>One-line summary shown on the Home page's valve card.</summary>
     public required string Teaser { get; init; }
+
+    /// <summary>Page &lt;title&gt;. Falls back to a generic "{Name} - World Cryo Services" template when unset.</summary>
+    public string? MetaTitle { get; init; }
+
+    /// <summary>Meta description. Falls back to a generic template when unset.</summary>
+    public string? MetaDescription { get; init; }
     public required string ThumbnailSrc { get; init; }
     public required string ThumbnailAlt { get; init; }
 

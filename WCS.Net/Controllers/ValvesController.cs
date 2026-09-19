@@ -15,8 +15,8 @@ public class ValvesController : Controller
             return NotFound();
         }
 
-        ViewData["Title"] = $"{valve.Name} - World Cryo Services";
-        ViewData["Description"] = $"World Cryo Services — service and spare parts for {valve.Name} cryogenic valves.";
+        ViewData["Title"] = valve.MetaTitle ?? $"{valve.Name} - World Cryo Services";
+        ViewData["Description"] = valve.MetaDescription ?? $"World Cryo Services — service and spare parts for {valve.Name} cryogenic valves.";
         return View(valve);
     }
 
