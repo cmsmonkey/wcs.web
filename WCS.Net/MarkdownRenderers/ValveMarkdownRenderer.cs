@@ -69,11 +69,11 @@ public static class ValveMarkdownRenderer
         var others = ValveCatalog.AllExcept(valve.Slug).ToList();
         if (others.Count > 0)
         {
-            sb.AppendLine("## Other Valve Types");
+            sb.AppendLine("## Explore More");
             sb.AppendLine();
             foreach (var other in others)
             {
-                sb.AppendLine($"- [{other.Name}](/valves/{other.Slug}): {other.Teaser}");
+                sb.AppendLine($"- [{other.Name}]({other.PagePath}): {other.Teaser}");
             }
             sb.AppendLine();
         }

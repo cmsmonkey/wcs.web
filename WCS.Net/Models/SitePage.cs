@@ -17,8 +17,8 @@ public static class SitePageRegistry
         {
             yield return new SitePage(
                 valve.Name,
-                $"/valves/{valve.Slug}",
-                $"/valves/{valve.Slug}.md",
+                valve.PagePath,
+                $"{valve.PagePath}.md",
                 valve.Teaser);
         }
     }

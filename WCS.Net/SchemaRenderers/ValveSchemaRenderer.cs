@@ -13,7 +13,7 @@ public static class ValveSchemaRenderer
 
     public static string Render(ValveViewModel valve)
     {
-        var pageUrl = $"{SiteUrl}/valves/{valve.Slug}";
+        var pageUrl = $"{SiteUrl}{valve.PagePath}";
 
         var serviceType = valve.Category switch
         {

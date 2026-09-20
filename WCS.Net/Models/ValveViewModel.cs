@@ -43,6 +43,14 @@ public class ValveViewModel
     public required string Kicker { get; init; }
     public required string ShortKicker { get; init; }
 
+    /// <summary>Overrides the page's URL, which otherwise defaults to "/valves/{Slug}" — used when an
+    /// entry doesn't belong under the "/valves/" path (e.g. Danfoss's actuator page lives at "/actuators").
+    /// Requesting "/valves/{Slug}" for such an entry redirects here instead of rendering directly.</summary>
+    public string? RoutePath { get; init; }
+
+    /// <summary>The page's actual URL path — <see cref="RoutePath"/> when set, else "/valves/{Slug}".</summary>
+    public string PagePath => RoutePath ?? $"/valves/{Slug}";
+
     /// <summary>Valve, Actuator, or System (e.g. a fuel-gas supply system) — defaults to Valve since
     /// that's most of the catalog.</summary>
     public ValveCategory Category { get; init; } = ValveCategory.Valve;
