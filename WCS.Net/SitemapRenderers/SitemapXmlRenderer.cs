@@ -7,7 +7,7 @@ namespace WCS.Net.SitemapRenderers;
 /// the way a hand-maintained static file does (the old wwwroot/sitemap.xml only listed the home page).</summary>
 public static class SitemapXmlRenderer
 {
-    private const string SiteUrl = "https://wcs-afgbghd0a4cde0hn.westeurope-01.azurewebsites.net";
+    private const string SiteUrl = "https://wcs-afgbghd0a4cde0hn.westeurope-01.azurewebsites.net/";
     private static readonly XNamespace Ns = "http://www.sitemaps.org/schemas/sitemap/0.9";
 
     public static string Render()

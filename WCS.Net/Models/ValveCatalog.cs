@@ -12,15 +12,15 @@ public static class ValveCatalog
         {
             Slug = "klinger-westad",
             Name = "Klinger Westad",
-            Kicker = "Service & Spare Parts",
+            Kicker = "Let us help you with",
             Teaser = "Full parts and service support for Klinger Westad LNG butterfly valves and actuators — including seals for gate valves the manufacturer no longer makes.",
             MetaTitle = "Klinger Westad Valve Spare Parts & Seals | WCS",
-            MetaDescription = "Independent spare parts and service for Klinger Westad LNG valves: metal & PTFE seals, HQ/Acto actuator parts, discontinued gate valve seals. 25% Price Guarantee.",
+            MetaDescription = "Independent spare parts and service for Klinger Westad LNG valves: metal & PTFE seals, HQ/Acto actuator parts, discontinued gate valve seals.",
             ThumbnailSrc = "/images/valves/klinger-westad/thumb.svg",
-            ThumbnailAlt = "Placeholder card thumbnail for Klinger Westad",
+            ThumbnailAlt = "",
             IntroParagraphs = new[]
             {
-                "Klinger Westad LNG butterfly valves are among the most widely used cryogenic valves on LNG carriers worldwide. WCS was the first independent company to give shipowners a genuine alternative for spares and service.",
+                "Klinger Westad LNG butterfly valves are among the most widely used cryogenic valves on LNG carriers worldwide. WCS was the first independent company to give ship owners a genuine alternative for spares and service.",
                 "We service and supply the full range of Klinger Westad spare and actuator parts — including HQ limitswitch boxes, Acto distribution bars, and HQ/Acto cylinder seal kits — and carry out service and overhaul both on board and in dock. Our metal seals are manufactured in-house in Norway; we're also the only supplier of seals for older Klinger Westad gate valves the manufacturer no longer produces. Every WCS-manufactured part carries our 25% Price Guarantee against the OEM price.",
             },
             Photos = new[]
@@ -100,12 +100,12 @@ public static class ValveCatalog
         {
             Slug = "ksb-amri",
             Name = "KSB Amri",
-            Kicker = "Service & Spare Parts",
+            Kicker = "Let us help you with",
             Teaser = "Independent parts and service for KSB Amri LNG butterfly valves and actuators, including HQ actuator cylinders and Danais-size metal seals.",
             MetaTitle = "KSB Amri Valve Spare Parts & Seals | WCS",
             MetaDescription = "Independent spare parts and service for KSB Amri LNG valves: Danais-size metal seals, actuator parts, flange gaskets, HQ cylinders. 25% Price Guarantee.",
             ThumbnailSrc = "/images/valves/ksb-amri/thumb.svg",
-            ThumbnailAlt = "Placeholder card thumbnail for KSB Amri",
+            ThumbnailAlt = "",
             IntroParagraphs = new[]
             {
                 "KSB Amri LNG butterfly valves use the same metal-to-metal sealing technology as Klinger Westad.",
@@ -154,12 +154,12 @@ public static class ValveCatalog
         {
             Slug = "pk-valves",
             Name = "PK Valves",
-            Kicker = "Service & Spare Parts",
+            Kicker = "Let us help you with",
             Teaser = "WCS now supplies metal-to-metal seals for PK Valves — the newest addition to our LNG butterfly valve aftermarket range.",
             MetaTitle = "PK Valves Spare Parts & Metal Seals | WCS",
             MetaDescription = "Metal-to-metal seals and spare parts for PK Valves LNG butterfly valves, 400-550mm, from an independent supplier. 25% Price Guarantee vs. OEM pricing.",
             ThumbnailSrc = "/images/valves/pk-valves/thumb.svg",
-            ThumbnailAlt = "Placeholder card thumbnail for PK Valves",
+            ThumbnailAlt = "",
             IntroParagraphs = new[]
             {
                 "PK Valves use the same metal-to-metal sealing technology found in Klinger Westad and KSB Amri LNG butterfly valves. WCS is now entering the market for PK valve seals as well.",
@@ -201,15 +201,15 @@ public static class ValveCatalog
         {
             Slug = "royal-goodwin",
             Name = "Royal Goodwin",
-            Kicker = "Service & Spare Parts",
+            Kicker = "Let us help you with",
             Teaser = "The only independent supplier of seals for legacy Royal Goodwin LNG valves no longer supported by the manufacturer.",
             MetaTitle = "Royal Goodwin Valve Seals & Spare Parts | WCS",
             MetaDescription = "The only independent supplier of seals for legacy Royal Goodwin LNG valves the manufacturer no longer produces. 25% Price Guarantee vs. OEM.",
             ThumbnailSrc = "/images/valves/royal-goodwin/thumb.svg",
-            ThumbnailAlt = "Placeholder card thumbnail for Royal Goodwin",
+            ThumbnailAlt = "",
             IntroParagraphs = new[]
             {
-                "Royal Goodwin LNG valves are still in service on many older LNG carriers, but Royal Goodwin no longer produces seals for them — leaving shipowners with few options for keeping this equipment running.",
+                "Royal Goodwin LNG valves are still in service on many older LNG carriers, but Royal Goodwin no longer produces seals for them — leaving ship owners with few options for keeping this equipment running.",
                 "WCS is the only supplier able to manufacture and supply seals for older Royal Goodwin valves, with the same 25% Price Guarantee we offer across our full range.",
             },
             Photos = new[]
@@ -247,12 +247,12 @@ public static class ValveCatalog
         {
             Slug = "danfoss",
             Name = "Danfoss",
-            Kicker = "Service & Spare Parts",
+            Kicker = "Let us help you with",
             Teaser = "Actuator seal kits for Danfoss actuators fitted to LNG and LPG butterfly valves — typically 20–40% below OEM pricing.",
             MetaTitle = "Danfoss Actuator Seal Kits & Spare Parts | WCS",
             MetaDescription = "Drop-in replacement seal kits for Danfoss actuators on LNG/LPG butterfly valves, built to OEM spec at 20-40% below OEM pricing.",
             ThumbnailSrc = "/images/valves/danfoss/thumb.svg",
-            ThumbnailAlt = "Placeholder card thumbnail for Danfoss",
+            ThumbnailAlt = "",
             IntroParagraphs = new[]
             {
                 "Danfoss actuators are fitted to many of the LNG and LPG butterfly valves WCS already services, and their original seal kits are frequently affected by long OEM lead times and high pricing.",

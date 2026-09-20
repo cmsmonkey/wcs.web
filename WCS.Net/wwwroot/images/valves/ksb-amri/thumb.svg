@@ -1,39 +1,12 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 320" role="img" aria-label="Generic cryogenic butterfly valve illustration — KSB Amri">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 320" role="img" aria-label="Cryogenic butterfly valve icon">
   <rect width="400" height="320" fill="#E6ECEF"/>
-
-  <g stroke="#C4CCD1" stroke-width="10" stroke-linecap="round">
-    <line x1="30" y1="176" x2="80" y2="176"/>
-    <line x1="272" y1="176" x2="370" y2="176"/>
+  <g fill="none" stroke="#0E1620" stroke-width="7" stroke-linecap="round" stroke-linejoin="round">
+    <line x1="40" y1="180" x2="138" y2="180"/>
+    <line x1="262" y1="180" x2="360" y2="180"/>
+    <rect x="138" y="138" width="124" height="84" rx="12"/>
+    <line x1="200" y1="138" x2="200" y2="88"/>
+    <rect x="160" y="46" width="80" height="54" rx="8"/>
   </g>
-
-  <g fill="#FFFFFF" stroke="#4E5C66" stroke-width="4" stroke-linejoin="round">
-    <rect x="80" y="128" width="26" height="96" rx="4"/>
-    <rect x="246" y="128" width="26" height="96" rx="4"/>
-  </g>
-  <g fill="#4E5C66">
-    <circle cx="93" cy="140" r="3.5"/>
-    <circle cx="93" cy="212" r="3.5"/>
-    <circle cx="259" cy="140" r="3.5"/>
-    <circle cx="259" cy="212" r="3.5"/>
-  </g>
-
-  <rect x="106" y="144" width="140" height="64" rx="10" fill="#FFFFFF" stroke="#4E5C66" stroke-width="5"/>
-
-  <ellipse cx="176" cy="176" rx="34" ry="11" fill="none" stroke="#4E5C66" stroke-width="4"/>
-  <line x1="176" y1="144" x2="176" y2="208" stroke="#4E5C66" stroke-width="3"/>
-
-  <rect x="165" y="76" width="22" height="68" fill="#FFFFFF" stroke="#4E5C66" stroke-width="4"/>
-
-  <rect x="136" y="34" width="80" height="42" rx="6" fill="#FFFFFF" stroke="#4E5C66" stroke-width="5"/>
-  <circle cx="176" cy="55" r="5" fill="#005797"/>
-
-  <g fill="none" stroke="#005797" stroke-width="3">
-    <path d="M14 40 V14 H40"/>
-    <path d="M360 14 H386 V40"/>
-    <path d="M386 280 V306 H360"/>
-    <path d="M40 306 H14 V280"/>
-  </g>
-
-  <text x="384" y="50" font-family="IBM Plex Mono, monospace" font-size="18" font-weight="700"
-        letter-spacing="0.4" fill="#005797" text-anchor="end">KSB AMRI</text>
+  <ellipse cx="200" cy="180" rx="40" ry="15" fill="none" stroke="#005797" stroke-width="7"/>
+  <circle cx="200" cy="73" r="5.5" fill="#005797"/>
 </svg>
