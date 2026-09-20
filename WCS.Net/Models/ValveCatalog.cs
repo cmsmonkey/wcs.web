@@ -249,21 +249,21 @@ public static class ValveCatalog
         },
         new ValveViewModel
         {
-            Slug = "danfoss",
-            Name = "Danfoss",
-            Kicker = "Actuators",
-            ShortKicker = "Actuators & supplies",
+            Slug = "actuators",
+            Name = "Actuators",
+            Kicker = "Seal Kits & Supplies",
+            ShortKicker = "Spare Parts & Supplies",
             Category = ValveCategory.Actuator,
             RoutePath = "/actuators",
-            Teaser = "Actuator seal kits for Danfoss actuators fitted to LNG and LPG butterfly valves — typically 20–40% below OEM pricing.",
-            MetaTitle = "Danfoss Actuator Seal Kits & Spare Parts | WCS",
-            MetaDescription = "Drop-in replacement seal kits for Danfoss actuators on LNG/LPG butterfly valves, built to OEM spec at 20-40% below OEM pricing.",
+            Teaser = "Actuator seal kits for KSB ACTO, SEIL Seres HQ, and Danfoss BRC series actuators fitted to LNG and LPG butterfly valves — typically 20–40% below OEM pricing.",
+            MetaTitle = "KSB Acto, Seil Seres, Danfoss actuator Seal Kits & Spare Parts | WCS",
+            MetaDescription = "Drop-in replacement seal kits for KSB Acto, Seil Seres HQ Series, and Danfoss BRC Series actuators on LNG/LPG butterfly valves, built to OEM spec at 20-40% below OEM pricing.",
             ThumbnailSrc = "/images/valves/danfoss/thumb.svg",
             ThumbnailAlt = "",
             IntroParagraphs = new[]
             {
                 "Danfoss actuators are fitted to many of the LNG and LPG butterfly valves WCS already services, and their original seal kits are frequently affected by long OEM lead times and high pricing.",
-                "WCS supplies drop-in replacement seal kits for Danfoss actuators, manufactured to the same specification as the OEM part, typically 20–40% below OEM pricing — with our 25% Price Guarantee available on request.",
+                "WCS supplies drop-in replacement seal kits forKSB Acto, Seil Seres HQ, and Danfoss BRC series actuators, manufactured to the same specification as the OEM part, typically 20–40% below OEM pricing — with our 25% Price Guarantee available on request.",
             },
             Photos = new[]
             {
@@ -274,7 +274,9 @@ public static class ValveCatalog
             },
             SealTypes = new[]
             {
-                "Danfoss Actuator Seal Kits",
+                "KSB ACTO Series – WCS seal kits and spare parts",
+                "SEIL SERES HQ Series – WCS seal kits and spare parts",
+                "Danfoss BRC Series – WCS seal kits",
                 "General Consumables - Grafoil Tape, Locking Wire, Molykote, & Lubricants",
             },
             Faqs = new[]
