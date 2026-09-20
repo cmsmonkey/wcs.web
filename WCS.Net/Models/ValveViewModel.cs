@@ -1,5 +1,14 @@
 namespace WCS.Net.Models;
 
+/// <summary>What kind of thing a catalog entry's page is about — drives wording that would
+/// otherwise wrongly call an actuator or a whole fuel-gas system a "valve".</summary>
+public enum ValveCategory
+{
+    Valve,
+    Actuator,
+    System,
+}
+
 public class ValvePhoto
 {
     public required string Src { get; init; }
@@ -32,6 +41,11 @@ public class ValveViewModel
     public required string Slug { get; init; }
     public required string Name { get; init; }
     public required string Kicker { get; init; }
+    public required string ShortKicker { get; init; }
+
+    /// <summary>Valve, Actuator, or System (e.g. a fuel-gas supply system) — defaults to Valve since
+    /// that's most of the catalog.</summary>
+    public ValveCategory Category { get; init; } = ValveCategory.Valve;
 
     /// <summary>One-line summary shown on the Home page's valve card.</summary>
     public required string Teaser { get; init; }
@@ -47,8 +61,20 @@ public class ValveViewModel
     public required IReadOnlyList<string> IntroParagraphs { get; init; }
     public required IReadOnlyList<ValvePhoto> Photos { get; init; }
 
+    /// <summary>Overrides the default "{Name} Service &amp; Spare Parts" H1 — used where that phrasing
+    /// doesn't fit (e.g. a fuel-gas supply system page, which isn't itself a spare part).</summary>
+    public string? PageHeading { get; init; }
+
     /// <summary>Names of the seal types WCS sells for this valve. Plain list — no links, prices, or other detail.</summary>
     public required IReadOnlyList<string> SealTypes { get; init; }
+
+    /// <summary>Overrides for the section listing <see cref="SealTypes"/> — default to the generic
+    /// "Seal Types &amp; Supplies" / "For {Name}, we supply" wording when unset.</summary>
+    public string? SealsSectionKicker { get; init; }
+    public string? SealsSectionHeading { get; init; }
+
+    /// <summary>Optional paragraph rendered below the <see cref="SealTypes"/> list.</summary>
+    public string? SealsSectionNote { get; init; }
 
     /// <summary>Optional extra callout block rendered below the photo grid (e.g. a related product line).</summary>
     public ValveCallout? Callout { get; init; }

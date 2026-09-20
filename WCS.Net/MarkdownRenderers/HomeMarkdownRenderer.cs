@@ -23,7 +23,7 @@ public static class HomeMarkdownRenderer
         sb.AppendLine();
         sb.AppendLine("Service and spare parts for LNG cryogenic butterfly valves and actuators — every major brand, one independent provider.");
         sb.AppendLine();
-        sb.AppendLine("- 16+ years, founder's experience");
+        sb.AppendLine("- 18+ years, founder's experience");
         sb.AppendLine("- 400+ dockings & jobs attended");
         sb.AppendLine("- 25%+ guaranteed savings vs. OEM");
         sb.AppendLine("- 24/7 global field service, 365 days");
@@ -44,7 +44,7 @@ public static class HomeMarkdownRenderer
 
         sb.AppendLine("## Why Choose WCS");
         sb.AppendLine();
-        sb.AppendLine("- 16+ yrs — one of the deepest track records in the industry");
+        sb.AppendLine("- 18+ yrs — one of the deepest track records in the industry");
         sb.AppendLine("- 400+ dockings and jobs attended worldwide");
         sb.AppendLine("- 25–40% typical savings against OEM pricing");
         sb.AppendLine("- Machines its own metal seals in Norway — the only supplier for some discontinued valve types");

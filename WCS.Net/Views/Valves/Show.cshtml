@@ -5,7 +5,7 @@
 <section class="page-header">
     <div class="wrap">
         <span class="kicker">@Model.Kicker</span>
-        <h1>@Model.Name Service & Spare Parts</h1>
+        <h1>@(Model.PageHeading ?? $"{Model.Name} Service & Spare Parts")</h1>
         @foreach (var paragraph in Model.IntroParagraphs)
         {
             <p class="lede">@paragraph</p>
@@ -16,8 +16,8 @@
 <section>
     <div class="wrap">
         <div class="section-head">
-            <span class="kicker">Seal Types & Supplies</span>
-            <h2>For @Model.Name, we supply</h2>
+            <span class="kicker">@(Model.SealsSectionKicker ?? "Seal Types & Supplies")</span>
+            <h2>@(Model.SealsSectionHeading ?? $"For {Model.Name}, we supply")</h2>
         </div>
         <ul class="seal-list">
             @foreach (var sealType in Model.SealTypes)
@@ -25,6 +25,10 @@
                 <li>@sealType</li>
             }
         </ul>
+        @if (!string.IsNullOrEmpty(Model.SealsSectionNote))
+        {
+            <p style="color:var(--muted); margin-top:20px;">@Model.SealsSectionNote</p>
+        }
     </div>
 </section>
 
@@ -110,8 +114,8 @@
 <section style="background:var(--surface-alt);">
     <div class="wrap">
         <div class="section-head">
-            <span class="kicker">Other Valve Types</span>
-            <h2>Explore the other valve types WCS services</h2>
+            <span class="kicker">Explore More</span>
+            <h2>Explore what else WCS supports</h2>
         </div>
         <div class="valve-cards">
             @foreach (var other in ValveCatalog.AllExcept(Model.Slug))

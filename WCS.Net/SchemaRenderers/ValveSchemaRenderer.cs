@@ -15,11 +15,18 @@ public static class ValveSchemaRenderer
     {
         var pageUrl = $"{SiteUrl}/valves/{valve.Slug}";
 
+        var serviceType = valve.Category switch
+        {
+            ValveCategory.Actuator => "Actuator spare parts and service",
+            ValveCategory.System => "LNG fuel gas supply system (FGSS) valve identification and support",
+            _ => "Valve spare parts and service",
+        };
+
         var service = new Dictionary<string, object?>
         {
             ["@context"] = "https://schema.org",
             ["@type"] = "Service",
-            ["serviceType"] = "Valve spare parts and service",
+            ["serviceType"] = serviceType,
             ["name"] = $"{valve.Name} Spare Parts & Service",
             ["description"] = valve.MetaDescription ?? valve.Teaser,
             ["url"] = pageUrl,

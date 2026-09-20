@@ -1,9 +1,9 @@
 namespace WCS.Net.Models;
 
 // Real brand copy for Klinger Westad, KSB Amri, PK Valves, and Royal Goodwin. Photos are
-// still placeholders for KSB Amri, PK Valves, and Royal Goodwin — swap in real photography
-// once it's available. Klinger Westad already carries the real HQ/Acto actuator parts
-// photos and the LPG seals callout, since both are specific to that brand.
+// still placeholders for KSB Amri, PK Valves, Royal Goodwin, and LNG Fuel Gas Supply Systems —
+// swap in real photography once it's available. Klinger Westad already carries the real HQ/Acto
+// actuator parts photos and the LPG seals callout, since both are specific to that brand.
 public static class ValveCatalog
 {
     public static readonly IReadOnlyList<ValveViewModel> All = new[]
@@ -13,6 +13,7 @@ public static class ValveCatalog
             Slug = "klinger-westad",
             Name = "Klinger Westad",
             Kicker = "Let us help you with",
+            ShortKicker = "Seals & supplies",
             Teaser = "Full parts and service support for Klinger Westad LNG butterfly valves and actuators — including seals for gate valves the manufacturer no longer makes.",
             MetaTitle = "Klinger Westad Valve Spare Parts & Seals | WCS",
             MetaDescription = "Independent spare parts and service for Klinger Westad LNG valves: metal & PTFE seals, HQ/Acto actuator parts, discontinued gate valve seals.",
@@ -101,6 +102,7 @@ public static class ValveCatalog
             Slug = "ksb-amri",
             Name = "KSB Amri",
             Kicker = "Let us help you with",
+            ShortKicker = "Seals & supplies",
             Teaser = "Independent parts and service for KSB Amri LNG butterfly valves and actuators, including HQ actuator cylinders and Danais-size metal seals.",
             MetaTitle = "KSB Amri Valve Spare Parts & Seals | WCS",
             MetaDescription = "Independent spare parts and service for KSB Amri LNG valves: Danais-size metal seals, actuator parts, flange gaskets, HQ cylinders. 25% Price Guarantee.",
@@ -155,6 +157,7 @@ public static class ValveCatalog
             Slug = "pk-valves",
             Name = "PK Valves",
             Kicker = "Let us help you with",
+            ShortKicker = "Seals & supplies",
             Teaser = "WCS now supplies metal-to-metal seals for PK Valves — the newest addition to our LNG butterfly valve aftermarket range.",
             MetaTitle = "PK Valves Spare Parts & Metal Seals | WCS",
             MetaDescription = "Metal-to-metal seals and spare parts for PK Valves LNG butterfly valves, 400-550mm, from an independent supplier. 25% Price Guarantee vs. OEM pricing.",
@@ -202,6 +205,7 @@ public static class ValveCatalog
             Slug = "royal-goodwin",
             Name = "Royal Goodwin",
             Kicker = "Let us help you with",
+            ShortKicker = "Seals & supplies",
             Teaser = "The only independent supplier of seals for legacy Royal Goodwin LNG valves no longer supported by the manufacturer.",
             MetaTitle = "Royal Goodwin Valve Seals & Spare Parts | WCS",
             MetaDescription = "The only independent supplier of seals for legacy Royal Goodwin LNG valves the manufacturer no longer produces. 25% Price Guarantee vs. OEM.",
@@ -247,7 +251,9 @@ public static class ValveCatalog
         {
             Slug = "danfoss",
             Name = "Danfoss",
-            Kicker = "Let us help you with",
+            Kicker = "Actuators",
+            ShortKicker = "Actuators & supplies",
+            Category = ValveCategory.Actuator,
             Teaser = "Actuator seal kits for Danfoss actuators fitted to LNG and LPG butterfly valves — typically 20–40% below OEM pricing.",
             MetaTitle = "Danfoss Actuator Seal Kits & Spare Parts | WCS",
             MetaDescription = "Drop-in replacement seal kits for Danfoss actuators on LNG/LPG butterfly valves, built to OEM spec at 20-40% below OEM pricing.",
@@ -294,6 +300,70 @@ public static class ValveCatalog
                 },
             },
             History = "Danfoss was founded on 1 September 1933, when Mads Clausen began building refrigeration valves in his parents' farmhouse in Nordborg, Denmark — originally under the name Dansk Køleautomatik- og Apparatfabrik, renamed Danfoss in 1946. What started as one person's workshop grew into one of Denmark's largest industrial groups, spanning heating, cooling, drives, and power solutions worldwide. Danfoss doesn't manufacture the LNG and LPG butterfly valves WCS services — its actuators are fitted to valves from several manufacturers, which is why original Danfoss actuator seal kits are a recurring spare-parts need across the fleet.",
+        },
+        new ValveViewModel
+        {
+            Slug = "lng-fuel-gas-supply-systems",
+            Name = "LNG Fuel Gas Supply Systems",
+            Kicker = "FGSS Support",
+            ShortKicker = "Spare Parts & Supplies",
+            Category = ValveCategory.System,
+            Teaser = "WCS identifies and supplies Klinger Westad spare parts and service for the cryogenic valves installed inside LNG Fuel Gas Supply Systems (FGSS) — whichever integrator supplied the system.",
+            MetaTitle = "LNG Fuel Gas Supply Systems (FGSS) Spare Parts & Service | WCS",
+            MetaDescription = "Independent identification, spare parts and service for Klinger Westad cryogenic valves installed in LNG Fuel Gas Supply Systems (FGSS) — a cost-effective alternative to the original system supplier.",
+            ThumbnailSrc = "/images/valves/lng-fuel-gas-supply-systems/thumb.svg",
+            ThumbnailAlt = "",
+            PageHeading = "LNG Fuel Gas Supply Systems (FGSS) Support",
+            IntroParagraphs = new[]
+            {
+                "WCS provides service, technical support and spare parts for Klinger Westad cryogenic valves installed in LNG Fuel Gas Supply Systems (FGSS).",
+                "A large and rapidly growing number of vessels are operating with LNG fuel systems. Many of these systems have been engineered and supplied by major FGSS integrators, with valves and associated spare parts listed in the vessel's technical documentation under the system supplier's part numbers.",
+                "However, many of the cryogenic valves installed within these systems are manufactured by Klinger Westad — which means vessel owners and operators do not necessarily need to source replacement seals, spare parts, or valve-related service through the original FGSS system supplier.",
+                "WCS can identify the installed Klinger Westad valves and supply the correct spare parts and sealing components directly — providing a technically equivalent and significantly more cost-effective supply route.",
+                "Go directly to the valve specialist — extensive LNG cargo valve experience, now supporting LNG fuel systems worldwide.",
+            },
+            Photos = new[]
+            {
+                new ValvePhoto { Src = "/images/valves/lng-fuel-gas-supply-systems/photo-1.svg", Alt = "Placeholder photo of an FGSS-installed valve, 1 of 4" },
+                new ValvePhoto { Src = "/images/valves/lng-fuel-gas-supply-systems/photo-2.svg", Alt = "Placeholder photo of an FGSS-installed valve, 2 of 4" },
+                new ValvePhoto { Src = "/images/valves/lng-fuel-gas-supply-systems/photo-3.svg", Alt = "Placeholder photo of an FGSS-installed valve, 3 of 4" },
+                new ValvePhoto { Src = "/images/valves/lng-fuel-gas-supply-systems/photo-4.svg", Alt = "Placeholder photo of an FGSS-installed valve, 4 of 4" },
+            },
+            SealTypes = new[]
+            {
+                "Identification and cross-reference of installed Klinger Westad valves",
+                "Spare parts, seals and sealing components",
+                "Valve inspection and overhaul",
+                "Onboard service",
+                "Technical support and troubleshooting",
+            },
+            SealsSectionKicker = "FGSS Support",
+            SealsSectionHeading = "Our FGSS support includes",
+            SealsSectionNote = "For vessels where only the FGSS supplier's part numbers are available, WCS can assist in identifying the corresponding Klinger Westad valve and required spare parts.",
+            Callout = new ValveCallout
+            {
+                Kicker = "Quick Cross-Reference",
+                Title = "Have an FGSS supplier part number?",
+                Body = "Send it to WCS — we can identify the corresponding Klinger Westad valve and spare parts.",
+            },
+            Faqs = new[]
+            {
+                new ValveFaq
+                {
+                    Question = "Does WCS support LNG Fuel Gas Supply Systems (FGSS) directly?",
+                    Answer = "WCS doesn't manufacture FGSS systems, but many of the cryogenic valves installed inside them are made by Klinger Westad — and WCS supplies service, technical support, and spare parts for those valves directly.",
+                },
+                new ValveFaq
+                {
+                    Question = "I only have my FGSS supplier's part number — can WCS still help?",
+                    Answer = "Yes. WCS can identify the corresponding Klinger Westad valve and required spare parts from the FGSS supplier's part number or documentation.",
+                },
+                new ValveFaq
+                {
+                    Question = "Is this cheaper than going through the original FGSS system supplier?",
+                    Answer = "Yes — WCS supplies technically equivalent spare parts and sealing components through a significantly more cost-effective route than sourcing via the original FGSS system supplier.",
+                },
+            },
         },
     };
 
