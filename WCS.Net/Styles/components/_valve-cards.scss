@@ -71,3 +71,37 @@
   text-transform: uppercase;
   color: var(--ink);
 }
+
+// Actuators, FGSS, and other non-valve support lines — set apart from the product-brand
+// cards above (filled surface, side-by-side icon) and widened to fill the row they share.
+.valve-card--service {
+  grid-column: span 2;
+  flex-direction: row;
+  background: var(--surface-alt);
+  border-left: 4px solid var(--cyan);
+
+  img {
+    width: 200px;
+    flex: 0 0 200px;
+    aspect-ratio: 1 / 1;
+    object-fit: contain;
+    padding: 28px;
+    background: var(--surface);
+  }
+
+  .valve-card-body {
+    justify-content: center;
+  }
+
+  @media (max-width: 520px) {
+    grid-column: span 1;
+    flex-direction: column;
+
+    img {
+      width: 100%;
+      flex-basis: auto;
+      aspect-ratio: 5/4;
+      padding: 0;
+    }
+  }
+}

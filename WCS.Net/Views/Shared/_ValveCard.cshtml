@@ -1,6 +1,10 @@
 @model ValveViewModel
 
-<a class="valve-card" href="@Model.PagePath">
+@{
+    var cardClass = Model.Category == ValveCategory.Valve ? "valve-card" : "valve-card valve-card--service";
+}
+
+<a class="@cardClass" href="@Model.PagePath">
     <img src="@Model.ThumbnailSrc" alt="@Model.ThumbnailAlt">
     <div class="valve-card-body">
         <span class="kicker">@Model.ShortKicker</span>
