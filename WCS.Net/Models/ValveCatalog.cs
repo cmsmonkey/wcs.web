@@ -1,9 +1,10 @@
 namespace WCS.Net.Models;
 
-// Real brand copy for Klinger Westad, KSB Amri, PK Valves, and Royal Goodwin. Photos are
-// still placeholders for KSB Amri, PK Valves, Royal Goodwin, and LNG Fuel Gas Supply Systems —
-// swap in real photography once it's available. Klinger Westad already carries the real HQ/Acto
-// actuator parts photos and the LPG seals callout, since both are specific to that brand.
+// Real brand copy for Klinger Westad, KSB Amri, PK Valves, and Royal Goodwin. Real photography is
+// in place for Klinger Westad, KSB Amri, PK Valves, Danfoss/Actuators, and LNG Fuel Gas Supply
+// Systems. Photos are still placeholders for Royal Goodwin — swap in real photography once it's
+// available. Klinger Westad already carries the real HQ/Acto actuator parts photos and the LPG
+// seals callout, since both are specific to that brand.
 public static class ValveCatalog
 {
     public static readonly IReadOnlyList<ValveViewModel> All = new[]
@@ -17,7 +18,7 @@ public static class ValveCatalog
             Teaser = "Full parts and service support for Klinger Westad LNG butterfly valves and actuators — including seals for gate valves the manufacturer no longer makes.",
             MetaTitle = "Klinger Westad Valve Spare Parts & Seals | WCS",
             MetaDescription = "Independent spare parts and service for Klinger Westad LNG valves: metal & PTFE seals, HQ/Acto actuator parts, discontinued gate valve seals.",
-            ThumbnailSrc = "/images/valves/klinger-westad/thumb.svg",
+            ThumbnailSrc = "/images/valves/klinger-westad/thumb.jpg",
             ThumbnailAlt = "",
             IntroParagraphs = new[]
             {
@@ -106,7 +107,7 @@ public static class ValveCatalog
             Teaser = "Independent parts and service for KSB Amri LNG butterfly valves and actuators, including HQ actuator cylinders and Danais-size metal seals.",
             MetaTitle = "KSB Amri Valve Spare Parts & Seals | WCS",
             MetaDescription = "Independent spare parts and service for KSB Amri LNG valves: Danais-size metal seals, actuator parts, flange gaskets, HQ cylinders. 25% Price Guarantee.",
-            ThumbnailSrc = "/images/valves/ksb-amri/thumb.svg",
+            ThumbnailSrc = "/images/valves/ksb-amri/thumb.jpg",
             ThumbnailAlt = "",
             IntroParagraphs = new[]
             {
@@ -115,10 +116,10 @@ public static class ValveCatalog
             },
             Photos = new[]
             {
-                new ValvePhoto { Src = "/images/valves/ksb-amri/photo-1.svg", Alt = "Placeholder photo of KSB Amri valve, 1 of 4" },
-                new ValvePhoto { Src = "/images/valves/ksb-amri/photo-2.svg", Alt = "Placeholder photo of KSB Amri valve, 2 of 4" },
-                new ValvePhoto { Src = "/images/valves/ksb-amri/photo-3.svg", Alt = "Placeholder photo of KSB Amri valve, 3 of 4" },
-                new ValvePhoto { Src = "/images/valves/ksb-amri/photo-4.svg", Alt = "Placeholder photo of KSB Amri valve, 4 of 4" },
+                new ValvePhoto { Src = "/images/valves/ksb-amri/photo-1.jpg", Alt = "KSB Amri butterfly valve removed for service, showing the metal seal flange face" },
+                new ValvePhoto { Src = "/images/valves/ksb-amri/photo-2.jpg", Alt = "Technician servicing a KSB Amri valve and actuator on board" },
+                new ValvePhoto { Src = "/images/valves/ksb-amri/photo-3.jpg", Alt = "Close-up of a KSB Amri valve seal bore and flange bolts" },
+                new ValvePhoto { Src = "/images/valves/ksb-amri/photo-4.jpg", Alt = "Close-up inside a KSB Amri valve body showing the sealing surface" },
             },
             SealTypes = new[]
             {
@@ -161,7 +162,7 @@ public static class ValveCatalog
             Teaser = "WCS now supplies metal-to-metal seals for PK Valves — the newest addition to our LNG butterfly valve aftermarket range.",
             MetaTitle = "PK Valves Spare Parts & Metal Seals | WCS",
             MetaDescription = "Metal-to-metal seals and spare parts for PK Valves LNG butterfly valves, 400-550mm, from an independent supplier. 25% Price Guarantee vs. OEM pricing.",
-            ThumbnailSrc = "/images/valves/pk-valves/thumb.svg",
+            ThumbnailSrc = "/images/valves/pk-valves/thumb.jpg",
             ThumbnailAlt = "",
             IntroParagraphs = new[]
             {
@@ -170,10 +171,10 @@ public static class ValveCatalog
             },
             Photos = new[]
             {
-                new ValvePhoto { Src = "/images/valves/pk-valves/photo-1.svg", Alt = "Placeholder photo of PK Valves valve, 1 of 4" },
-                new ValvePhoto { Src = "/images/valves/pk-valves/photo-2.svg", Alt = "Placeholder photo of PK Valves valve, 2 of 4" },
-                new ValvePhoto { Src = "/images/valves/pk-valves/photo-3.svg", Alt = "Placeholder photo of PK Valves valve, 3 of 4" },
-                new ValvePhoto { Src = "/images/valves/pk-valves/photo-4.svg", Alt = "Placeholder photo of PK Valves valve, 4 of 4" },
+                new ValvePhoto { Src = "/images/valves/pk-valves/photo-1.jpg", Alt = "PK Valves butterfly valve with actuator, removed for service" },
+                new ValvePhoto { Src = "/images/valves/pk-valves/photo-2.jpg", Alt = "Close-up of a PK Valves flange face and metal seal ring" },
+                new ValvePhoto { Src = "/images/valves/pk-valves/photo-3.jpg", Alt = "PK Valves butterfly valves and actuators laid out for overhaul" },
+                new ValvePhoto { Src = "/images/valves/pk-valves/photo-4.jpg", Alt = "Close-up inside a PK Valves valve body showing the sealing surface" },
             },
             SealTypes = new[]
             {
@@ -258,7 +259,7 @@ public static class ValveCatalog
             Teaser = "Actuator seal kits for KSB ACTO, SEIL Seres HQ, and Danfoss BRC series actuators fitted to LNG and LPG butterfly valves — typically 20–40% below OEM pricing.",
             MetaTitle = "KSB Acto, Seil Seres, Danfoss actuator Seal Kits & Spare Parts | WCS",
             MetaDescription = "Drop-in replacement seal kits for KSB Acto, Seil Seres HQ Series, and Danfoss BRC Series actuators on LNG/LPG butterfly valves, built to OEM spec at 20-40% below OEM pricing.",
-            ThumbnailSrc = "/images/valves/danfoss/thumb.svg",
+            ThumbnailSrc = "/images/valves/danfoss/thumb.jpg",
             ThumbnailAlt = "",
             IntroParagraphs = new[]
             {
@@ -267,10 +268,10 @@ public static class ValveCatalog
             },
             Photos = new[]
             {
-                new ValvePhoto { Src = "/images/valves/danfoss/photo-1.svg", Alt = "Placeholder photo of Danfoss actuator, 1 of 4" },
-                new ValvePhoto { Src = "/images/valves/danfoss/photo-2.svg", Alt = "Placeholder photo of Danfoss actuator, 2 of 4" },
-                new ValvePhoto { Src = "/images/valves/danfoss/photo-3.svg", Alt = "Placeholder photo of Danfoss actuator, 3 of 4" },
-                new ValvePhoto { Src = "/images/valves/danfoss/photo-4.svg", Alt = "Placeholder photo of Danfoss actuator, 4 of 4" },
+                new ValvePhoto { Src = "/images/valves/danfoss/photo-1.jpg", Alt = "A valve actuator installed on board, tagged for service" },
+                new ValvePhoto { Src = "/images/valves/danfoss/photo-2.jpg", Alt = "A new actuator seal kit fitted to the cylinder" },
+                new ValvePhoto { Src = "/images/valves/danfoss/photo-3.jpg", Alt = "Close-up of a worn actuator seal bore, corroded after years in service" },
+                new ValvePhoto { Src = "/images/valves/danfoss/photo-4.jpg", Alt = "Technician servicing an actuator on board" },
             },
             SealTypes = new[]
             {
@@ -315,7 +316,7 @@ public static class ValveCatalog
             Teaser = "WCS identifies and supplies Klinger Westad spare parts and service for the cryogenic valves installed inside LNG Fuel Gas Supply Systems (FGSS) — whichever integrator supplied the system.",
             MetaTitle = "LNG Fuel Gas Supply Systems (FGSS) Spare Parts & Service | WCS",
             MetaDescription = "Independent identification, spare parts and service for Klinger Westad cryogenic valves installed in LNG Fuel Gas Supply Systems (FGSS) — a cost-effective alternative to the original system supplier.",
-            ThumbnailSrc = "/images/valves/lng-fuel-gas-supply-systems/thumb.svg",
+            ThumbnailSrc = "/images/valves/lng-fuel-gas-supply-systems/thumb.jpg",
             ThumbnailAlt = "",
             PageHeading = "LNG Fuel Gas Supply Systems (FGSS) Support",
             IntroParagraphs = new[]
@@ -328,10 +329,10 @@ public static class ValveCatalog
             },
             Photos = new[]
             {
-                new ValvePhoto { Src = "/images/valves/lng-fuel-gas-supply-systems/photo-1.svg", Alt = "Placeholder photo of an FGSS-installed valve, 1 of 4" },
-                new ValvePhoto { Src = "/images/valves/lng-fuel-gas-supply-systems/photo-2.svg", Alt = "Placeholder photo of an FGSS-installed valve, 2 of 4" },
-                new ValvePhoto { Src = "/images/valves/lng-fuel-gas-supply-systems/photo-3.svg", Alt = "Placeholder photo of an FGSS-installed valve, 3 of 4" },
-                new ValvePhoto { Src = "/images/valves/lng-fuel-gas-supply-systems/photo-4.svg", Alt = "Placeholder photo of an FGSS-installed valve, 4 of 4" },
+                new ValvePhoto { Src = "/images/valves/lng-fuel-gas-supply-systems/photo-1.jpg", Alt = "A cryogenic valve and actuator removed from an FGSS installation" },
+                new ValvePhoto { Src = "/images/valves/lng-fuel-gas-supply-systems/photo-2.jpg", Alt = "A valve actuator installed inside an FGSS room" },
+                new ValvePhoto { Src = "/images/valves/lng-fuel-gas-supply-systems/photo-3.jpg", Alt = "Technician working on equipment inside an FGSS room" },
+                new ValvePhoto { Src = "/images/valves/lng-fuel-gas-supply-systems/photo-4.jpg", Alt = "Sealing components removed from an FGSS-installed valve" },
             },
             SealTypes = new[]
             {
