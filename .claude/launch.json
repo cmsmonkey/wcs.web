@@ -5,8 +5,8 @@
       "name": "wcs-web",
       "runtimeExecutable": "dotnet",
       "runtimeArgs": ["run", "--project", "WCS.Net", "--launch-profile", "https"],
-      "port": 7199,
-      "url": "https://localhost:7199"
+      "port": 7301,
+      "url": "https://localhost:7301"
     }
   ]
 }

@@ -1,10 +1,9 @@
 namespace WCS.Net.Models;
 
 // Real brand copy for Klinger Westad, KSB Amri, PK Valves, and Royal Goodwin. Real photography is
-// in place for Klinger Westad, KSB Amri, PK Valves, Danfoss/Actuators, and LNG Fuel Gas Supply
-// Systems. Photos are still placeholders for Royal Goodwin — swap in real photography once it's
-// available. Klinger Westad already carries the real HQ/Acto actuator parts photos and the LPG
-// seals callout, since both are specific to that brand.
+// in place for all catalog entries: Klinger Westad, KSB Amri, PK Valves, Royal Goodwin,
+// Danfoss/Actuators, and LNG Fuel Gas Supply Systems. Klinger Westad already carries the real
+// HQ/Acto actuator parts photos and the LPG seals callout, since both are specific to that brand.
 public static class ValveCatalog
 {
     public static readonly IReadOnlyList<ValveViewModel> All = new[]
@@ -210,7 +209,7 @@ public static class ValveCatalog
             Teaser = "The only independent supplier of seals for legacy Royal Goodwin LNG valves no longer supported by the manufacturer.",
             MetaTitle = "Royal Goodwin Valve Seals & Spare Parts | WCS",
             MetaDescription = "The only independent supplier of seals for legacy Royal Goodwin LNG valves the manufacturer no longer produces. 25% Price Guarantee vs. OEM.",
-            ThumbnailSrc = "/images/valves/royal-goodwin/thumb.svg",
+            ThumbnailSrc = "/images/valves/royal-goodwin/thumb.jpg",
             ThumbnailAlt = "",
             IntroParagraphs = new[]
             {
@@ -219,10 +218,10 @@ public static class ValveCatalog
             },
             Photos = new[]
             {
-                new ValvePhoto { Src = "/images/valves/royal-goodwin/photo-1.svg", Alt = "Placeholder photo of Royal Goodwin valve, 1 of 4" },
-                new ValvePhoto { Src = "/images/valves/royal-goodwin/photo-2.svg", Alt = "Placeholder photo of Royal Goodwin valve, 2 of 4" },
-                new ValvePhoto { Src = "/images/valves/royal-goodwin/photo-3.svg", Alt = "Placeholder photo of Royal Goodwin valve, 3 of 4" },
-                new ValvePhoto { Src = "/images/valves/royal-goodwin/photo-4.svg", Alt = "Placeholder photo of Royal Goodwin valve, 4 of 4" },
+                new ValvePhoto { Src = "/images/valves/royal-goodwin/photo-1.jpg", Alt = "Royal Goodwin valves and actuators laid out for overhaul in the workshop" },
+                new ValvePhoto { Src = "/images/valves/royal-goodwin/photo-2.jpg", Alt = "A disassembled Royal Goodwin valve actuator shaft and body" },
+                new ValvePhoto { Src = "/images/valves/royal-goodwin/photo-3.jpg", Alt = "Technicians servicing Royal Goodwin valves and actuators in the workshop" },
+                new ValvePhoto { Src = "/images/valves/royal-goodwin/photo-4.jpg", Alt = "Royal Goodwin valve actuators tagged and ready for dispatch" },
             },
             SealTypes = new[]
             {
