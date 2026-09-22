@@ -258,7 +258,7 @@ public static class ValveCatalog
             RoutePath = "/actuators",
             Teaser = "Actuator seal kits for KSB ACTO, SEIL Seres HQ, and Danfoss BRC series actuators fitted to LNG and LPG butterfly valves — typically 20–40% below OEM pricing.",
             MetaTitle = "KSB Acto, Seil Seres, Danfoss actuator Seal Kits & Spare Parts | WCS",
-            MetaDescription = "Drop-in replacement seal kits for KSB Acto, Seil Seres HQ Series, and Danfoss BRC Series actuators on LNG/LPG butterfly valves, built to OEM spec at 20-40% below OEM pricing.",
+            MetaDescription = "Drop-in replacement seal kits for KSB Acto, Seil Seres HQ, and Danfoss BRC Series actuators on LNG/LPG butterfly valves, built to OEM spec, not OEM pricing",
             ThumbnailSrc = "/images/valves/danfoss/thumb.jpg",
             ThumbnailAlt = "",
             IntroParagraphs = new[]
@@ -315,7 +315,7 @@ public static class ValveCatalog
             Category = ValveCategory.System,
             Teaser = "WCS identifies and supplies Klinger Westad spare parts and service for the cryogenic valves installed inside LNG Fuel Gas Supply Systems (FGSS) — whichever integrator supplied the system.",
             MetaTitle = "LNG Fuel Gas Supply Systems (FGSS) Spare Parts & Service | WCS",
-            MetaDescription = "Independent identification, spare parts and service for Klinger Westad cryogenic valves installed in LNG Fuel Gas Supply Systems (FGSS) — a cost-effective alternative to the original system supplier.",
+            MetaDescription = "Spare parts and service for cryogenic valves installed in LNG Fuel Gas Supply Systems (FGSS) — a cost-effective alternative to the original system supplier.",
             ThumbnailSrc = "/images/valves/lng-fuel-gas-supply-systems/thumb.jpg",
             ThumbnailAlt = "",
             PageHeading = "LNG Fuel Gas Supply Systems (FGSS) Support",
