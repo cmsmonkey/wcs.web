@@ -1,5 +1,6 @@
 using Microsoft.Extensions.FileProviders;
 using Microsoft.Net.Http.Headers;
+using WCS.Net.Security;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -21,12 +22,19 @@ if (!app.Environment.IsDevelopment())
 }
 
 app.UseHttpsRedirection();
+app.UseContentSecurityPolicyReportOnly();
+app.Use(async (context, next) =>
+{
+    context.Response.Headers["Referrer-Policy"] = "strict-origin-when-cross-origin";
+    await next();
+});
 
 app.UseRouting();
 
 app.UseAuthorization();
 
 app.MapStaticAssets();
+app.MapContentSecurityPolicyReports();
 app.MapControllerRoute(
     name: "default",
     pattern: "{controller=Home}/{action=Index}/{id?}")
