@@ -4,6 +4,8 @@
     <TargetFramework>net10.0</TargetFramework>
     <Nullable>enable</Nullable>
     <ImplicitUsings>enable</ImplicitUsings>
+    <!-- Served by the /.well-known UseStaticFiles block in Program.cs, which sets the right content types -->
+    <StaticWebAssetEndpointExclusionPattern>.well-known/**</StaticWebAssetEndpointExclusionPattern>
   </PropertyGroup>
 
   <ItemGroup>

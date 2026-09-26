@@ -47,7 +47,12 @@ app.UseStaticFiles(new StaticFileOptions
     DefaultContentType = "application/json",
     FileProvider = new PhysicalFileProvider(
         Path.Combine(builder.Environment.WebRootPath, ".well-known")),
-    RequestPath = "/.well-known"
+    RequestPath = "/.well-known",
+    OnPrepareResponse = context =>
+    {
+        if (context.File.Name == "api-catalog")
+            context.Context.Response.ContentType = "application/linkset+json; profile=\"https://www.rfc-editor.org/info/rfc9727\"";
+    }
 });
 
 app.Run();
